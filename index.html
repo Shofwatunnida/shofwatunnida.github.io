@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PolaKu: Belajar Pola Bilangan</title>
+  <meta name="description" content="Aplikasi belajar Pola Bilangan untuk siswa SMP, bisa dipakai tanpa internet.">
+  <meta name="theme-color" content="#fce7f3">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-title" content="PolaKu">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lewati" href="#utama">Langsung ke isi</a>
+  <!-- Ornamen tema "Pastel Math Wonderland": lapisan tetap DI BELAKANG konten (z-index negatif),
+       tidak bisa diklik, disembunyikan dari pembaca layar, dan selalu tampil utuh (pola tidak terpotong). -->
+  <div class="latar-hias" aria-hidden="true">
+    <img class="hias hias-persegi" src="img/hias-persegi.svg" alt="" width="158" height="86">
+    <img class="hias hias-segitiga" src="img/hias-segitiga.svg" alt="" width="158" height="86">
+    <img class="hias hias-angka" src="img/hias-angka.svg" alt="" width="236" height="90">
+    <img class="hias hias-bentuk" src="img/hias-bentuk.svg" alt="" width="204" height="88">
+  </div>
+  <div id="status-offline" class="status-offline" role="status" hidden>Mode offline: materi tetap bisa dipakai.</div>
+  <main id="utama" tabindex="-1">
+    <noscript><p>PolaKu membutuhkan JavaScript. Aktifkan JavaScript di browsermu.</p></noscript>
+  </main>
+  <nav class="nav-bawah" aria-label="Navigasi utama">
+    <a href="#/" data-nav="beranda"><span aria-hidden="true">🏠</span>Beranda</a>
+    <a href="#/peta" data-nav="materi"><span aria-hidden="true">🗺️</span>Materi</a>
+    <a href="#/progres" data-nav="progres"><span aria-hidden="true">📈</span>Progres</a>
+    <a href="#/tentang" data-nav="tentang"><span aria-hidden="true">ⓘ</span>Tentang</a>
+  </nav>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

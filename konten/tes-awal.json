@@ -1,0 +1,16 @@
+{
+  "judul": "Tes Awal",
+  "pengantar": "Tes singkat ini membantu kami mengetahui apa yang masih kamu ingat tentang pola bilangan. Jawab sebisamu. Kalau lupa, tidak apa-apa.",
+  "soal": [
+    { "id": "ta1", "tipe": "isian-angka", "indikator": "selisih-tetap", "pertanyaan": "Tentukan bilangan berikutnya: 2, 4, 6, 8, …", "pola": [2, 4, 6, 8], "jawaban": 10 },
+    { "id": "ta2", "tipe": "isian-angka", "indikator": "operasi-selisih", "pertanyaan": "Berapa selisih antara 7 dan 12?", "jawaban": 5 },
+    { "id": "ta3", "tipe": "isian-angka", "indikator": "bilangan-kuadrat", "pertanyaan": "Tentukan bilangan berikutnya: 1, 4, 9, 16, …", "pola": [1, 4, 9, 16], "jawaban": 25 },
+    { "id": "ta4", "tipe": "isian-angka", "indikator": "pola-gambar", "pertanyaan": "Perhatikan gambar noktah berbentuk segitiga. Berapa noktah pada gambar ke-4?", "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 3 }, "jawaban": 10 },
+    { "id": "ta5", "tipe": "isian-angka", "indikator": "fibonacci", "pertanyaan": "Tentukan bilangan berikutnya: 1, 1, 2, 3, 5, …", "pola": [1, 1, 2, 3, 5], "jawaban": 8 },
+    { "id": "ta6", "tipe": "isian-angka", "indikator": "membaca-aturan", "pertanyaan": "Aturan suatu pola: **kalikan urutannya dengan 4**. Berapa suku ke-5?", "jawaban": 20 }
+  ],
+  "rekomendasi": [
+    { "min": 0, "max": 4, "modul": "m2", "alasan": "Mulailah dari M2 · Pola dengan Selisih Tetap. Bagian Konsep akan mengingatkan istilah dasar seperti suku dan selisih." },
+    { "min": 5, "max": 6, "modul": "m4", "alasan": "Hebat, kamu masih ingat banyak! Kamu bisa mulai dari M4 · Pola Persegi dan Persegi Panjang, atau mengulang M2 jika ingin." }
+  ]
+}

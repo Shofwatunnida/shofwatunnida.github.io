@@ -1,0 +1,216 @@
+{
+  "id": "m0",
+  "kode": "M0",
+  "judul": "Pengingat Prasyarat",
+  "tujuan": [
+    "Menyebutkan suku ke-1, ke-2, dan seterusnya dari sebuah barisan (prasyarat)",
+    "Menghitung selisih dua suku yang berdampingan (prasyarat)",
+    "Melanjutkan barisan sederhana dengan aturan yang diketahui (prasyarat)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Apa itu barisan?",
+      "video": { "judul": "Barisan dan suku", "src": "" },
+      "visual": { "jenis": "barisan", "pola": [10, 20, 30, 40], "tampilkanSelisih": false, "tanya": 0 },
+      "teks": [
+        "**Barisan** adalah bilangan-bilangan yang ditulis berurutan.",
+        "Contohnya 10, 20, 30, 40.",
+        "Urutannya tidak boleh ditukar."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Suku dan urutannya",
+      "visual": { "jenis": "tabel", "kolom": ["Urutan", "1", "2", "3", "4"], "baris": [["Suku", 10, 20, 30, 40]] },
+      "teks": [
+        "Setiap bilangan dalam barisan disebut **suku**.",
+        "Suku ke-1 adalah 10 dan suku ke-3 adalah 30.",
+        "Suku ke-n ditulis **Uₙ**, misalnya U₃ = 30."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Selisih",
+      "visual": { "jenis": "barisan", "pola": [10, 20, 30, 40], "tampilkanSelisih": true, "tanya": 0 },
+      "teks": [
+        "**Selisih** adalah suku sesudah dikurangi suku sebelumnya.",
+        "Contohnya 20 − 10 = 10 dan 30 − 20 = 10."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Barisan yang makin kecil",
+      "visual": { "jenis": "barisan", "pola": [50, 45, 40, 35], "tampilkanSelisih": true, "tanya": 0 },
+      "teks": [
+        "Barisan juga bisa makin kecil.",
+        "Di sini setiap suku berkurang 5, karena 45 − 50 = −5."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Barisan 7, 11, 15, 19, … Tentukan suku ke-3 dan selisihnya.",
+      "visual": { "jenis": "barisan", "pola": [7, 11, 15, 19], "tanya": 0 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Hitung urutan dari kiri: U₁ = 7, U₂ = 11, U₃ = **15**." },
+        { "label": "2. Cari lompatan", "teks": "Selisih = suku sesudah − suku sebelum: 11 − 7 = 4." },
+        { "label": "3. Periksa", "teks": "Cek pasangan lain: 15 − 11 = 4 dan 19 − 15 = 4. Jadi selisihnya **4**." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Barisan 60, 54, 48, 42, … Tentukan suku berikutnya.",
+      "visual": { "jenis": "barisan", "pola": [60, 54, 48, 42] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Barisan ini makin kecil." },
+        { "label": "2. Cari lompatan", "teks": "60 → 54 berkurang 6." },
+        { "label": "3. Periksa", "teks": "54 → 48 dan 48 → 42 juga berkurang 6." },
+        { "label": "4. Lanjutkan", "teks": "Suku berikutnya = 42 − 6 = **36**." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Barisan 9, 14, 19, 24, … Tentukan selisih dan suku berikutnya.",
+      "visual": { "jenis": "barisan", "pola": [9, 14, 19, 24] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "U₁ = 9, U₂ = 14, U₃ = 19, U₄ = 24." },
+        { "label": "2. Cari lompatan", "teks": "Hitung selisih dua suku yang berdampingan.", "kosong": { "tipe": "isian-angka", "label": "Selisih =", "jawaban": 5, "petunjuk": "Hitung 14 − 9.", "penjelasan": "14 − 9 = 5. Pasangan lain juga 5." } },
+        { "label": "3. Lanjutkan", "teks": "Suku berikutnya = 24 + 5 = **29**." }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Barisan 80, 72, 64, 56, … Tentukan suku berikutnya.",
+      "visual": { "jenis": "barisan", "pola": [80, 72, 64, 56] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Barisan ini makin kecil." },
+        { "label": "2. Cari lompatan", "teks": "Setiap langkah, berkurang berapa?", "kosong": { "tipe": "isian-angka", "label": "Berkurang", "jawaban": 8, "petunjuk": "Hitung 80 − 72.", "penjelasan": "80 − 72 = 8. Setiap suku berkurang 8." } },
+        { "label": "3. Lanjutkan", "teks": "Kurangi suku terakhir dengan 8.", "kosong": { "tipe": "isian-angka", "label": "Suku berikutnya =", "jawaban": 48, "petunjuk": "56 − 8 = ?", "penjelasan": "56 − 8 = 48." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m0-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Pada barisan 12, 15, 18, 21, 24, berapakah suku ke-4?",
+      "pola": [12, 15, 18, 21, 24], "tanya": 0, "cekAturan": false, "jawaban": 21,
+      "petunjuk": ["Hitung urutan dari kiri, mulai dari 1.", "12 adalah suku ke-1 dan 15 adalah suku ke-2.", "Suku ke-3 adalah 18, jadi suku ke-4 adalah …"],
+      "umpanBalik": [
+        { "jawaban": 24, "pesan": "24 adalah suku ke-5. Hitung lagi urutannya dari 12." },
+        { "jawaban": 18, "pesan": "18 adalah suku ke-3. Maju satu suku lagi." }
+      ],
+      "umpanBalikUmum": "Hitung urutan suku satu per satu dari kiri: ke-1, ke-2, ke-3, ke-4."
+    },
+    {
+      "id": "m0-l2", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Berapa selisih suku-suku pada barisan 25, 32, 39, 46, …?",
+      "pola": [25, 32, 39, 46], "tanya": 0, "cekAturan": false, "jawaban": 7,
+      "petunjuk": ["Selisih = suku sesudah − suku sebelum.", "Ambil dua suku pertama: 32 dan 25.", "32 − 25 = …"],
+      "umpanBalik": [
+        { "jawaban": 57, "pesan": "Kamu menjumlahkan 25 + 32. Selisih dicari dengan pengurangan." },
+        { "jawaban": 6, "pesan": "Hitung lagi: 32 − 25 = ?" }
+      ],
+      "umpanBalikUmum": "Kurangi suku sesudah dengan suku sebelum, lalu cek pada pasangan lain."
+    },
+    {
+      "id": "m0-l3", "tipe": "lengkapi-tabel", "tingkat": 2,
+      "pertanyaan": "Barisan berikut selisihnya selalu 6. Lengkapi suku yang kosong.",
+      "tabel": { "kolom": ["Urutan", "1", "2", "3", "4", "5"], "baris": [["Suku", 4, 10, null, 22, null]] },
+      "kunciTabel": [16, 28],
+      "petunjuk": ["Setiap suku = suku sebelumnya + 6.", "Suku ke-3 = 10 + 6.", "Suku ke-5 = 22 + 6."],
+      "umpanBalikUmum": "Tambahkan 6 pada suku sebelumnya untuk mendapatkan suku berikutnya."
+    },
+    {
+      "id": "m0-l4", "tipe": "pilihan-ganda", "tingkat": 2,
+      "pertanyaan": "Barisan manakah yang selisihnya **tetap 3**?",
+      "pilihan": ["2, 5, 8, 11, …", "3, 6, 12, 24, …", "1, 4, 8, 13, …", "3, 5, 7, 9, …"],
+      "jawaban": 0,
+      "petunjuk": ["Hitung selisih dua suku pertama pada setiap pilihan.", "Lalu cek apakah selisih berikutnya sama.", "Cari pilihan yang selisihnya 3, 3, 3."],
+      "umpanBalik": [
+        { "jawaban": 1, "pesan": "6 − 3 = 3, tetapi 12 − 6 = 6. Selisihnya tidak tetap." },
+        { "jawaban": 2, "pesan": "4 − 1 = 3, tetapi 8 − 4 = 4. Selisihnya berubah." },
+        { "jawaban": 3, "pesan": "Selisih barisan ini 2, bukan 3." }
+      ],
+      "umpanBalikUmum": "Selisih tetap berarti hasil pengurangan selalu sama."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "rumah-melati",
+      "judul": "Nomor Rumah di Jalan Melati",
+      "konteks": "personal",
+      "tahapSiklus": "A",
+      "teks": "Di sisi kiri Jalan Melati, rumah-rumah diberi nomor mulai dari ujung jalan.\nRumah pertama bernomor 3, rumah kedua bernomor 5, dan rumah ketiga bernomor 7.\nRumah Nadia adalah rumah keenam dari ujung jalan.",
+      "visual": { "jenis": "tabel", "kolom": ["Rumah ke-", "1", "2", "3"], "baris": [["Nomor", 3, 5, 7]] },
+      "infoPenting": ["bernomor 3", "bernomor 5", "bernomor 7", "rumah keenam"],
+      "ditanya": "nomor rumah Nadia dan nomor rumah lain di sisi kiri jalan",
+      "ubah": {
+        "pertanyaan": "Lengkapi nomor rumah ke-4 sampai ke-6.",
+        "tabel": { "kolom": ["Rumah ke-", "1", "2", "3", "4", "5", "6"], "baris": [["Nomor", 3, 5, 7, null, null, null]] },
+        "kunciTabel": [9, 11, 13],
+        "petunjuk": ["Berapa selisih nomor dua rumah yang berdampingan?", "5 − 3 = 2, jadi nomor bertambah 2.", "Rumah ke-4 = 7 + 2 = 9."],
+        "umpanBalikUmum": "Nomor rumah bertambah 2 dari rumah sebelumnya."
+      },
+      "soal": [
+        {
+          "id": "melati-1", "tipe": "isian-angka", "level": "L1", "proses": ["LM3"],
+          "pertanyaan": "Berapa nomor rumah Nadia?", "jawaban": 13,
+          "petunjuk": ["Rumah Nadia adalah rumah keenam.", "Lihat tabel yang tadi kamu lengkapi.", "Rumah ke-5 bernomor 11, jadi rumah ke-6 = 11 + 2."],
+          "umpanBalik": [
+            { "jawaban": 6, "pesan": "6 adalah urutan rumahnya, bukan nomor rumahnya." },
+            { "jawaban": 12, "pesan": "Nomor rumah di sisi ini bertambah 2: 3, 5, 7, … Hitung lagi." }
+          ],
+          "umpanBalikUmum": "Mulai dari 3, lalu tambah 2 untuk setiap rumah berikutnya sampai rumah keenam.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Dalam cerita ini, apa arti angka 6 dan 13?", "pilihan": ["6 = urutan rumah, 13 = nomor rumah", "6 = nomor rumah, 13 = urutan rumah", "Keduanya nomor rumah"], "jawaban": 0, "penjelasan": "Benar. \"Rumah keenam\" adalah urutan, sedangkan 13 adalah nomornya.", "penjelasanSalah": "Bedakan urutan rumah (ke berapa dari ujung jalan) dengan nomor rumah." }
+          ]
+        },
+        {
+          "id": "melati-2", "tipe": "pilihan-ganda", "level": "L2", "proses": ["LM2"],
+          "pertanyaan": "Barisan manakah yang menggambarkan nomor rumah di sisi kiri Jalan Melati?",
+          "pilihan": ["3, 5, 7, 9, 11, …", "3, 7, 11, 15, …", "1, 3, 5, 7, 9, …", "3, 4, 5, 6, 7, …"], "jawaban": 0,
+          "petunjuk": ["Rumah pertama bernomor berapa?", "Nomor rumah bertambah berapa?", "Cari barisan yang dimulai dari 3 dan bertambah 2."],
+          "umpanBalik": [
+            { "jawaban": 1, "pesan": "Selisih barisan ini 4. Di cerita, nomor rumah bertambah 2." },
+            { "jawaban": 2, "pesan": "Barisan ini dimulai dari 1, padahal rumah pertama bernomor 3." },
+            { "jawaban": 3, "pesan": "Selisih barisan ini 1. Di cerita, nomor rumah bertambah 2." }
+          ],
+          "umpanBalikUmum": "Periksa suku pertama dan selisihnya."
+        },
+        {
+          "id": "melati-3", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Raka berpendapat tentang nomor rumah di sisi kiri Jalan Melati.",
+          "tokoh": "Raka", "klaim": "Kalau jalannya cukup panjang, pasti ada rumah bernomor 20 di sisi kiri.", "klaimBenar": false,
+          "alasan": { "pilihan": ["Setuju, karena nomor rumah terus bertambah.", "Semua nomor di sisi kiri adalah bilangan ganjil (3, 5, 7, …), sedangkan 20 bilangan genap.", "Nomor rumah paling besar adalah 13."], "benar": 1 },
+          "petunjuk": ["Tulis beberapa nomor rumah: 3, 5, 7, 9, …", "Apakah ada nomor yang genap?", "Mulai dari 3 dan selalu ditambah 2, hasilnya selalu ganjil."],
+          "umpanBalikUmum": "Lanjutkan barisan 3, 5, 7, … dan lihat apakah 20 bisa muncul.",
+          "pembahasan": "Nomor rumah di sisi kiri adalah 3, 5, 7, 9, … Semuanya ganjil karena dimulai dari bilangan ganjil dan selalu ditambah 2. Jadi nomor 20 tidak akan pernah ada di sisi kiri."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Apa bedanya **urutan suku** dengan **nilai suku**? Berikan satu contoh.",
+    "kalimatAwal": "Urutan suku adalah ",
+    "contohPenjelasan": "Urutan suku menunjukkan posisi, misalnya suku ke-3. Nilai suku adalah bilangannya. Pada barisan 10, 20, 30, nilai suku ke-3 adalah 30."
+  },
+  "kuis": [
+    { "id": "m0-k1", "tipe": "isian-angka", "pertanyaan": "Pada barisan 6, 13, 20, 27, 34, berapakah suku ke-2?", "pola": [6, 13, 20, 27, 34], "tanya": 0, "jawaban": 13, "pembahasan": "Suku ke-1 adalah 6, jadi suku ke-2 adalah 13." },
+    { "id": "m0-k2", "tipe": "isian-angka", "pertanyaan": "Berapa selisih suku-suku pada barisan 40, 49, 58, 67, …?", "pola": [40, 49, 58, 67], "tanya": 0, "jawaban": 9, "pembahasan": "49 − 40 = 9, 58 − 49 = 9, dan 67 − 58 = 9." },
+    {
+      "id": "m0-k3", "tipe": "pg-kompleks", "pertanyaan": "Perhatikan barisan 100, 90, 80, 70, … Tentukan Benar atau Salah.",
+      "pola": [100, 90, 80, 70],
+      "pernyataan": [
+        { "teks": "Suku ke-1 adalah 100.", "benar": true, "penjelasan": "Suku pertama dari kiri adalah 100." },
+        { "teks": "Setiap suku berkurang 10.", "benar": true, "penjelasan": "100 → 90 → 80 → 70, berkurang 10 setiap langkah." },
+        { "teks": "Suku ke-5 adalah 50.", "benar": false, "penjelasan": "Suku ke-5 = 70 − 10 = 60." },
+        { "teks": "U₃ = 80.", "benar": true, "penjelasan": "Suku ke-3 adalah 80." }
+      ],
+      "umpanBalikUmum": "Hitung urutan suku dari kiri dan perhatikan bahwa barisan ini berkurang 10."
+    }
+  ]
+}

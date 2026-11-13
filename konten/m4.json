@@ -1,0 +1,227 @@
+{
+  "id": "m4",
+  "kode": "M4",
+  "judul": "Pola Persegi dan Persegi Panjang",
+  "tujuan": [
+    "Mengenali pola persegi dan persegi panjang dari susunan noktah (TP2)",
+    "Menyatakan rumus n² dan n(n + 1) (TP3, TP4)",
+    "Memakai pola persegi untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Pola dari susunan noktah",
+      "video": { "judul": "Pola persegi dari noktah", "src": "" },
+      "visual": { "jenis": "noktah", "bentuk": "persegi", "banyak": 4 },
+      "teks": [
+        "Banyak noktah pada setiap gambar: 1, 4, 9, 16.",
+        "Noktah tersusun membentuk persegi. Noktah oranye adalah tambahan dari gambar sebelumnya."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Mengapa disebut pola persegi?",
+      "visual": { "jenis": "tabel", "kolom": ["Gambar ke-n", "Susunan", "Banyak noktah"], "baris": [[1, "1 × 1", 1], [2, "2 × 2", 4], [3, "3 × 3", 9], [4, "4 × 4", 16]] },
+      "teks": [
+        "Gambar ke-n berisi n baris dan n kolom.",
+        "Jadi banyak noktahnya **Uₙ = n × n = n^2**."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Selisihnya tidak tetap",
+      "visual": { "jenis": "barisan", "pola": [1, 4, 9, 16], "tampilkanSelisih": true, "tingkatDua": true, "tanya": 0 },
+      "teks": [
+        "Selisihnya +3, +5, +7, makin lama makin besar.",
+        "Tetapi selisih dari selisihnya selalu **+2**. Ini salah satu tanda pola persegi."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Pola persegi panjang",
+      "visual": { "jenis": "noktah", "bentuk": "persegi-panjang", "banyak": 4 },
+      "teks": [
+        "Banyak noktah: 2, 6, 12, 20.",
+        "Gambar ke-n berisi n baris dan (n + 1) kolom."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Rumus pola persegi panjang",
+      "visual": { "jenis": "tabel", "kolom": ["Gambar ke-n", "Susunan", "Banyak noktah"], "baris": [[1, "1 × 2", 2], [2, "2 × 3", 6], [3, "3 × 4", 12], [4, "4 × 5", 20]] },
+      "teks": [
+        "Jadi **Uₙ = n × (n + 1)**.",
+        "Contoh: gambar ke-5 berisi 5 × 6 = 30 noktah."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Berapa banyak noktah pada gambar ke-12 dari pola persegi 1, 4, 9, 16, …?",
+      "visual": { "jenis": "barisan", "pola": [1, 4, 9, 16] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Banyak noktah: 1, 4, 9, 16." },
+        { "label": "2. Cari lompatan", "teks": "+3, +5, +7. Selisihnya tidak tetap.", "visual": { "jenis": "barisan", "pola": [1, 4, 9, 16], "tampilkanSelisih": true, "tingkatDua": true, "tanya": 0 } },
+        { "label": "3. Periksa", "teks": "Selisih tingkat duanya selalu +2. Suku-sukunya adalah 1 × 1, 2 × 2, 3 × 3, 4 × 4." },
+        { "label": "4. Rumuskan", "teks": "**Uₙ = n^2**." },
+        { "label": "5. Cek ulang", "teks": "n = 3: 3² = 9 ✓. Jadi U₁₂ = 12² = **144** noktah." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Tentukan suku ke-9 dari pola persegi panjang 2, 6, 12, 20, …",
+      "visual": { "jenis": "noktah", "bentuk": "persegi-panjang", "banyak": 3 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Banyak noktah: 2, 6, 12, 20." },
+        { "label": "2. Cari lompatan", "teks": "+4, +6, +8. Selisihnya tidak tetap, tetapi bertambah 2." },
+        { "label": "3. Periksa", "teks": "2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4, 20 = 4 × 5." },
+        { "label": "4. Rumuskan", "teks": "**Uₙ = n(n + 1)**." },
+        { "label": "5. Cek ulang", "teks": "n = 2: 2 × 3 = 6 ✓. Jadi U₉ = 9 × 10 = **90**." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Pola persegi 1, 4, 9, 16, … Tentukan suku ke-7.",
+      "visual": { "jenis": "barisan", "pola": [1, 4, 9, 16] },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Suku-sukunya 1 × 1, 2 × 2, 3 × 3, 4 × 4." },
+        { "label": "4. Rumuskan", "teks": "Uₙ = n × n = n²." },
+        { "label": "5. Hitung", "teks": "Hitung suku ke-7.", "kosong": { "tipe": "isian-angka", "label": "U₇ =", "jawaban": 49, "petunjuk": "7 × 7 = ?", "penjelasan": "7 × 7 = 49." } }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Pola persegi panjang 2, 6, 12, 20, … Tentukan rumus dan suku ke-11.",
+      "visual": { "jenis": "barisan", "pola": [2, 6, 12, 20] },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4, 20 = 4 × 5." },
+        { "label": "4. Rumuskan", "teks": "Tulis rumus suku ke-n.", "kosong": { "tipe": "isian-rumus", "label": "Uₙ =", "jawaban": "n(n+1)", "petunjuk": "Gambar ke-n berisi n baris dan (n + 1) kolom.", "penjelasan": "Uₙ = n(n + 1)." } },
+        { "label": "5. Hitung", "teks": "Hitung suku ke-11.", "kosong": { "tipe": "isian-angka", "label": "U₁₁ =", "jawaban": 132, "petunjuk": "11 × 12 = ?", "penjelasan": "11 × 12 = 132." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m4-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Perhatikan pola persegi berikut. Berapa noktah pada gambar ke-6?",
+      "visual": { "jenis": "noktah", "bentuk": "persegi", "banyak": 3 }, "jawaban": 36,
+      "petunjuk": ["Gambar ke-3 berisi 3 baris dan 3 kolom.", "Gambar ke-6 berisi 6 baris dan 6 kolom.", "6 × 6 = …"],
+      "umpanBalik": [{ "jawaban": 12, "pesan": "Kamu menghitung 6 + 6. Pola persegi memakai 6 × 6." }, { "jawaban": 25, "pesan": "Itu gambar ke-5 (5 × 5)." }],
+      "umpanBalikUmum": "Gambar ke-n berisi n × n noktah."
+    },
+    {
+      "id": "m4-l2", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Pola persegi 1, 4, 9, 16, … Tentukan suku ke-15.",
+      "pola": [1, 4, 9, 16], "tingkatDua": true, "jawaban": 225,
+      "petunjuk": ["Rumus pola persegi adalah n².", "Suku ke-15 = 15 × 15.", "15 × 15 = 225."],
+      "umpanBalik": [{ "jawaban": 30, "pesan": "15 × 2 = 30. Pola persegi memakai 15 × 15." }],
+      "umpanBalikUmum": "Gunakan rumus Uₙ = n²."
+    },
+    {
+      "id": "m4-l3", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Pola persegi panjang 2, 6, 12, 20, … Tentukan suku ke-7.",
+      "pola": [2, 6, 12, 20], "tingkatDua": true, "jawaban": 56,
+      "petunjuk": ["Rumusnya n(n + 1).", "Suku ke-7 = 7 × (7 + 1).", "7 × 8 = 56."],
+      "umpanBalik": [{ "jawaban": 49, "pesan": "7 × 7 adalah pola persegi. Pola persegi panjang memakai 7 × 8." }, { "jawaban": 42, "pesan": "6 × 7 adalah suku ke-6." }],
+      "umpanBalikUmum": "Gunakan rumus Uₙ = n(n + 1)."
+    },
+    {
+      "id": "m4-l4", "tipe": "isian-rumus", "tingkat": 3,
+      "pertanyaan": "Tentukan rumus suku ke-n dari pola 2, 6, 12, 20, 30, …",
+      "pola": [2, 6, 12, 20, 30], "jawaban": "n(n+1)",
+      "petunjuk": ["Tulis setiap suku sebagai perkalian dua bilangan.", "2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4.", "Bilangan pertama = n, bilangan kedua = n + 1."],
+      "umpanBalik": [
+        { "jawaban": "n^2", "pesan": "n² memberi 1, 4, 9, … Selalu kurang dari pola. Kurang berapa?" },
+        { "jawaban": "4n-2", "pesan": "Cek n = 3: 4(3) − 2 = 10, padahal suku ke-3 adalah 12. Selisih pola ini tidak tetap." }
+      ],
+      "umpanBalikUmum": "Coba tulis setiap suku sebagai perkalian dua bilangan berurutan."
+    },
+    {
+      "id": "m4-l5", "tipe": "menjodohkan", "tingkat": 2,
+      "pertanyaan": "Jodohkan setiap pola dengan rumusnya.",
+      "pasangan": [
+        { "kiri": "1, 4, 9, 16, …", "jawaban": 2 },
+        { "kiri": "2, 6, 12, 20, …", "jawaban": 0 },
+        { "kiri": "3, 6, 9, 12, …", "jawaban": 1 }
+      ],
+      "kanan": ["Uₙ = n(n + 1)", "Uₙ = 3n", "Uₙ = n²"],
+      "petunjuk": ["Uji setiap rumus untuk n = 1 dan n = 2.", "n² memberi 1, 4. n(n + 1) memberi 2, 6.", "3n memberi 3, 6."],
+      "umpanBalikUmum": "Uji setiap rumus untuk n = 1 dan n = 2, lalu cocokkan dengan polanya."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "kawung",
+      "judul": "Motif Batik Kawung",
+      "konteks": "sosial-budaya",
+      "tahapSiklus": "B",
+      "teks": "Rani membuat motif kawung pada kain untuk tugas prakarya.\nMotif ke-1 berisi 1 bulatan. Motif ke-2 berisi 4 bulatan, tersusun 2 baris dan 2 kolom. Motif ke-3 berisi 9 bulatan, tersusun 3 baris dan 3 kolom.\nRani punya manik-manik untuk 100 bulatan.",
+      "visual": { "jenis": "noktah", "bentuk": "persegi", "banyak": 3 },
+      "glosarium": [
+        { "istilah": "kawung", "arti": "motif batik berbentuk bulatan lonjong yang tersusun rapi" },
+        { "istilah": "prakarya", "arti": "mata pelajaran membuat kerajinan" }
+      ],
+      "infoPenting": ["1 bulatan", "4 bulatan", "9 bulatan", "100 bulatan"],
+      "ditanya": "banyak bulatan pada motif tertentu dan motif terbesar yang bisa dibuat",
+      "soal": [
+        {
+          "id": "kawung-1", "tipe": "isian-angka", "level": "L1", "proses": ["LM3"],
+          "pertanyaan": "Berapa bulatan pada motif ke-5?", "satuan": "bulatan", "jawaban": 25,
+          "petunjuk": ["Motif ke-n tersusun n baris dan n kolom.", "Motif ke-5 tersusun 5 baris dan 5 kolom.", "5 × 5 = 25."],
+          "umpanBalik": [{ "jawaban": 10, "pesan": "5 + 5 = 10. Susunannya 5 baris dan 5 kolom, jadi dikali." }],
+          "umpanBalikUmum": "Motif ke-n berisi n × n bulatan."
+        },
+        {
+          "id": "kawung-2", "tipe": "isian-angka", "level": "L2", "proses": ["LM2", "LM3"],
+          "pertanyaan": "Rani ingin membuat motif ke-8. Berapa bulatan yang dibutuhkan?", "satuan": "bulatan", "jawaban": 64,
+          "petunjuk": ["Ubah cerita menjadi barisan: 1, 4, 9, …", "Ini pola persegi, rumusnya n².", "8 × 8 = 64."],
+          "umpanBalik": [{ "jawaban": 16, "pesan": "8 × 2 = 16. Pola persegi memakai 8 × 8." }],
+          "umpanBalikUmum": "Gunakan rumus Uₙ = n²."
+        },
+        {
+          "id": "kawung-3", "tipe": "isian-angka", "level": "L3", "proses": ["LM3", "LM4", "LM5"],
+          "pertanyaan": "Dengan 100 bulatan, motif ke berapa yang paling besar yang bisa dibuat Rani (hanya satu motif)?", "jawaban": 10,
+          "petunjuk": ["Bilangan berapa jika dikali dirinya sendiri hasilnya 100 atau kurang?", "Coba 10 × 10 dan 11 × 11.", "10 × 10 = 100 (cukup), 11 × 11 = 121 (tidak cukup)."],
+          "umpanBalik": [{ "jawaban": 11, "pesan": "Motif ke-11 butuh 11 × 11 = 121 bulatan, lebih dari 100." }, { "jawaban": 50, "pesan": "100 : 2 = 50. Ingat, motif ke-n butuh n × n bulatan, bukan n × 2." }],
+          "umpanBalikUmum": "Cari n terbesar yang n × n-nya tidak lebih dari 100.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Motif ke-10 butuh 100 bulatan. Apakah Rani bisa membuat motif ke-11?", "pilihan": ["Bisa, karena 11 lebih dari 10", "Tidak bisa, karena motif ke-11 butuh 121 bulatan, lebih dari 100", "Bisa, kalau bulatannya dikecilkan"], "jawaban": 1, "penjelasan": "Tepat. Manik-maniknya hanya cukup untuk 100 bulatan, jadi motif terbesar adalah motif ke-10.", "penjelasanSalah": "Hitung bulatan untuk motif ke-11, lalu bandingkan dengan 100." }
+          ]
+        },
+        {
+          "id": "kawung-4", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Sinta membandingkan motif ke-3 dan motif ke-6.",
+          "tokoh": "Sinta", "klaim": "Motif ke-6 membutuhkan bulatan 2 kali lipat motif ke-3.", "klaimBenar": false,
+          "alasan": { "pilihan": ["Benar, karena 6 adalah 2 kali 3.", "Motif ke-6 butuh 36 bulatan, motif ke-3 butuh 9. Jadi 4 kali lipat, bukan 2 kali.", "Motif ke-6 butuh 12 bulatan."], "benar": 1 },
+          "petunjuk": ["Hitung bulatan motif ke-3 dan motif ke-6.", "Motif ke-3 = 9, motif ke-6 = 36.", "36 : 9 = 4."],
+          "umpanBalikUmum": "Hitung bulatan kedua motif, lalu bandingkan.",
+          "pembahasan": "Motif ke-6 butuh 6 × 6 = 36 bulatan, motif ke-3 butuh 9. 36 = 4 × 9, jadi 4 kali lipat. Pada pola persegi, jika urutannya dikali 2, banyak bulatannya dikali 4."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Bagaimana caramu membedakan pola persegi dan pola persegi panjang?",
+    "kalimatAwal": "Pola persegi ",
+    "contohPenjelasan": "Pola persegi tersusun n baris dan n kolom, jadi rumusnya n². Pola persegi panjang tersusun n baris dan n + 1 kolom, jadi rumusnya n(n + 1). Selisih keduanya tidak tetap, tetapi selisih tingkat duanya selalu 2."
+  },
+  "kuis": [
+    { "id": "m4-k1", "tipe": "isian-angka", "pertanyaan": "Pola persegi 1, 4, 9, 16, … Tentukan suku ke-20.", "pola": [1, 4, 9, 16], "jawaban": 400, "pembahasan": "U₂₀ = 20² = 400." },
+    { "id": "m4-k2", "tipe": "isian-angka", "pertanyaan": "Pola persegi panjang 2, 6, 12, 20, … Tentukan suku ke-10.", "pola": [2, 6, 12, 20], "jawaban": 110, "pembahasan": "U₁₀ = 10 × 11 = 110." },
+    { "id": "m4-k3", "tipe": "pilihan-ganda", "pertanyaan": "Barisan manakah yang merupakan pola persegi?", "pilihan": ["1, 3, 5, 7, …", "1, 4, 9, 16, …", "2, 4, 6, 8, …", "1, 3, 6, 10, …"], "jawaban": 1, "pembahasan": "1, 4, 9, 16 adalah 1², 2², 3², 4²." },
+    {
+      "id": "m4-k4", "tipe": "pg-kompleks", "pertanyaan": "Perhatikan pola 1, 4, 9, 16, 25, … Tentukan Benar atau Salah.",
+      "pola": [1, 4, 9, 16, 25],
+      "pernyataan": [
+        { "teks": "Selisihnya tetap.", "benar": false, "penjelasan": "Selisihnya +3, +5, +7, +9, jadi tidak tetap." },
+        { "teks": "Selisih tingkat duanya selalu +2.", "benar": true, "penjelasan": "5 − 3 = 2, 7 − 5 = 2, 9 − 7 = 2." },
+        { "teks": "Suku ke-9 adalah 81.", "benar": true, "penjelasan": "9² = 81." },
+        { "teks": "Suku ke-n adalah 2n.", "benar": false, "penjelasan": "2n memberi 2, 4, 6, … Rumus yang benar n²." }
+      ],
+      "umpanBalikUmum": "Hitung selisihnya dan gunakan rumus n²."
+    }
+  ]
+}

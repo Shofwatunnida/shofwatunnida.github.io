@@ -1,0 +1,238 @@
+{
+  "id": "m5",
+  "kode": "M5",
+  "judul": "Pola Segitiga",
+  "tujuan": [
+    "Mengenali pola bilangan segitiga dari susunan noktah (TP2)",
+    "Menyatakan rumus Uₙ = n(n + 1)/2 (TP3)",
+    "Menentukan bilangan segitiga ke-n dengan rumus (TP4)",
+    "Memakai pola segitiga untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Noktah membentuk segitiga",
+      "video": { "judul": "Pola segitiga", "src": "" },
+      "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 4 },
+      "teks": [
+        "Noktah disusun menjadi segitiga: 1, 3, 6, 10.",
+        "Setiap gambar mendapat satu baris baru di bawahnya."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Selisihnya bertambah 1",
+      "visual": { "jenis": "barisan", "pola": [1, 3, 6, 10, 15], "tampilkanSelisih": true, "tingkatDua": true, "tanya": 0 },
+      "teks": [
+        "Selisihnya +2, +3, +4, +5.",
+        "Baris baru selalu 1 noktah lebih panjang daripada baris sebelumnya."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Menjumlah bilangan berurutan",
+      "visual": { "jenis": "tabel", "kolom": ["Gambar ke-n", "Penjumlahan", "Banyak noktah"], "baris": [[1, "1", 1], [2, "1 + 2", 3], [3, "1 + 2 + 3", 6], [4, "1 + 2 + 3 + 4", 10]] },
+      "teks": [
+        "Gambar ke-n berisi 1 + 2 + … + n noktah.",
+        "Untuk n yang besar, menjumlah satu per satu memakan waktu lama."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Dua segitiga menjadi persegi panjang",
+      "visual": { "jenis": "noktah", "bentuk": "dua-segitiga", "banyak": 3 },
+      "teks": [
+        "Segitiga biru dan segitiga pink sama besar.",
+        "Bersama-sama, keduanya membentuk persegi panjang n × (n + 1).",
+        "Jadi satu segitiga adalah setengahnya: **Uₙ = n(n + 1)/2**."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Mencoba rumus",
+      "visual": { "jenis": "tabel", "kolom": ["n", "n × (n + 1)", "dibagi 2"], "baris": [[1, 2, 1], [2, 6, 3], [3, 12, 6], [4, 20, 10]] },
+      "teks": [
+        "Hitung n × (n + 1) dulu, lalu bagi 2.",
+        "Contohnya, gambar ke-10 berisi 10 × 11 : 2 = 55 noktah."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Berapa noktah pada gambar ke-8 pola segitiga?",
+      "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 3 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Banyak noktah: 1, 3, 6, …" },
+        { "label": "2. Cari lompatan", "teks": "+2, +3, … Selisihnya bertambah 1." },
+        { "label": "3. Periksa", "teks": "Ini pola segitiga." },
+        { "label": "4. Rumuskan", "teks": "Uₙ = n(n + 1)/2, jadi U₈ = 8 × 9 : 2 = 72 : 2 = **36**." },
+        { "label": "5. Cek ulang", "teks": "Jumlahkan: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36 ✓." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Tentukan suku ke-12 pola segitiga 1, 3, 6, 10, …",
+      "visual": { "jenis": "barisan", "pola": [1, 3, 6, 10] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Suku-sukunya 1, 3, 6, 10." },
+        { "label": "2. Cari lompatan", "teks": "+2, +3, +4. Selisihnya bertambah 1." },
+        { "label": "3. Periksa", "teks": "Ini pola segitiga, rumusnya Uₙ = n(n + 1)/2." },
+        { "label": "4. Rumuskan", "teks": "U₁₂ = 12 × 13 : 2 = 156 : 2 = **78**." },
+        { "label": "5. Cek ulang", "teks": "Cek rumus untuk n = 4: 4 × 5 : 2 = 10 ✓." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Pola segitiga 1, 3, 6, 10, … Tentukan suku ke-6.",
+      "visual": { "jenis": "barisan", "pola": [1, 3, 6, 10] },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Selisihnya bertambah 1, jadi ini pola segitiga: Uₙ = n(n + 1)/2." },
+        { "label": "4. Hitung bagian pertama", "teks": "Hitung n × (n + 1) untuk n = 6.", "kosong": { "tipe": "isian-angka", "label": "6 × 7 =", "jawaban": 42, "petunjuk": "6 × 7 = ?", "penjelasan": "6 × 7 = 42." } },
+        { "label": "5. Bagi 2", "teks": "42 : 2 = **21**. Cek: 1 + 2 + 3 + 4 + 5 + 6 = 21 ✓." }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Tentukan suku ke-20 pola segitiga.",
+      "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 3 },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Pola segitiga: Uₙ = n(n + 1)/2." },
+        { "label": "4. Hitung bagian pertama", "teks": "Hitung n × (n + 1) untuk n = 20.", "kosong": { "tipe": "isian-angka", "label": "20 × 21 =", "jawaban": 420, "petunjuk": "20 × 21 = 20 × 20 + 20.", "penjelasan": "20 × 21 = 420." } },
+        { "label": "5. Bagi 2", "teks": "Bagi hasilnya dengan 2.", "kosong": { "tipe": "isian-angka", "label": "U₂₀ =", "jawaban": 210, "petunjuk": "420 : 2 = ?", "penjelasan": "420 : 2 = 210." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m5-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Pola segitiga 1, 3, 6, 10, 15, … Tentukan suku berikutnya.",
+      "pola": [1, 3, 6, 10, 15], "tingkatDua": true, "jawaban": 21,
+      "petunjuk": ["Hitung selisihnya: +2, +3, +4, +5.", "Selisih berikutnya +6.", "15 + 6 = …"],
+      "umpanBalik": [
+        { "jawaban": 20, "pesan": "Selisih terakhir +5, jadi berikutnya +6, bukan +5." },
+        { "jawaban": 17, "pesan": "Selisihnya bertambah: +2, +3, +4, +5, lalu +6." }
+      ],
+      "umpanBalikUmum": "Pada pola segitiga, selisihnya bertambah 1 setiap langkah."
+    },
+    {
+      "id": "m5-l2", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Perhatikan pola segitiga berikut. Berapa noktah pada gambar ke-9?",
+      "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 3 }, "jawaban": 45,
+      "petunjuk": ["Gunakan rumus Uₙ = n(n + 1)/2.", "9 × 10 = 90.", "90 : 2 = …"],
+      "umpanBalik": [
+        { "jawaban": 90, "pesan": "9 × 10 = 90 adalah dua segitiga. Jangan lupa dibagi 2." },
+        { "jawaban": 81, "pesan": "9 × 9 adalah pola persegi. Pola segitiga memakai 9 × 10 : 2." }
+      ],
+      "umpanBalikUmum": "Hitung n × (n + 1), lalu bagi 2."
+    },
+    {
+      "id": "m5-l3", "tipe": "lengkapi-tabel", "tingkat": 2,
+      "pertanyaan": "Lengkapi banyak noktah pada pola segitiga.",
+      "tabel": { "kolom": ["Gambar ke-", "1", "2", "3", "4", "5", "6"], "baris": [["Noktah", 1, 3, 6, null, 15, null]] },
+      "kunciTabel": [10, 21],
+      "petunjuk": ["Selisihnya bertambah 1: +2, +3, +4, …", "Gambar ke-4 = 6 + 4.", "Gambar ke-6 = 15 + 6."],
+      "umpanBalikUmum": "Tambahkan selisih yang bertambah 1 setiap langkah: +2, +3, +4, +5, +6."
+    },
+    {
+      "id": "m5-l4", "tipe": "isian-rumus", "tingkat": 3,
+      "pertanyaan": "Tentukan rumus banyak noktah pada gambar ke-n dari pola 1, 3, 6, 10, …",
+      "pola": [1, 3, 6, 10], "jawaban": "n(n+1)/2",
+      "petunjuk": ["Dua segitiga yang sama membentuk persegi panjang.", "Persegi panjang itu berukuran n × (n + 1).", "Satu segitiga adalah setengahnya."],
+      "umpanBalik": [
+        { "jawaban": "n(n+1)", "pesan": "n(n + 1) memberi 2, 6, 12, … (dua segitiga). Satu segitiga adalah setengahnya." },
+        { "jawaban": "n^2", "pesan": "n² adalah pola persegi: 1, 4, 9, …" }
+      ],
+      "umpanBalikUmum": "Ingat cara dua segitiga disusun menjadi persegi panjang."
+    },
+    {
+      "id": "m5-l5", "tipe": "pilihan-ganda", "tingkat": 2,
+      "pertanyaan": "Manakah yang merupakan bilangan segitiga?",
+      "pilihan": ["24", "28", "32", "40"], "jawaban": 1,
+      "petunjuk": ["Tulis bilangan segitiga: 1, 3, 6, 10, 15, …", "Lanjutkan dengan selisih +6, +7, +8, +9.", "1, 3, 6, 10, 15, 21, 28, 36, 45, …"],
+      "umpanBalik": [
+        { "jawaban": 0, "pesan": "24 tidak ada di barisan: setelah 21 adalah 28." },
+        { "jawaban": 2, "pesan": "32 tidak ada di barisan: setelah 28 adalah 36." },
+        { "jawaban": 3, "pesan": "40 tidak ada di barisan: setelah 36 adalah 45." }
+      ],
+      "umpanBalikUmum": "Lanjutkan barisan segitiga sampai melewati 40."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "kaleng-warung",
+      "judul": "Tumpukan Kaleng di Warung",
+      "konteks": "sosial-budaya",
+      "tahapSiklus": "B",
+      "teks": "Bu Sari menyusun kaleng susu di etalase warungnya dalam bentuk segitiga.\nBaris paling atas berisi 1 kaleng. Setiap baris di bawahnya berisi 1 kaleng lebih banyak daripada baris di atasnya.\nBu Sari punya 50 kaleng.",
+      "visual": { "jenis": "noktah", "bentuk": "segitiga", "banyak": 3 },
+      "glosarium": [{ "istilah": "etalase", "arti": "lemari kaca untuk memajang barang dagangan" }],
+      "infoPenting": ["1 kaleng", "1 kaleng lebih banyak", "50 kaleng"],
+      "ditanya": "banyak kaleng dalam tumpukan dan banyak baris yang bisa dibuat",
+      "soal": [
+        {
+          "id": "kaleng-1", "tipe": "isian-angka", "level": "L1", "proses": ["LM3"],
+          "pertanyaan": "Jika tumpukan dibuat 5 baris, berapa kaleng yang dipakai?", "satuan": "kaleng", "jawaban": 15,
+          "petunjuk": ["Baris 1 berisi 1 kaleng, baris 2 berisi 2 kaleng, dan seterusnya.", "Jumlahkan isi 5 baris.", "1 + 2 + 3 + 4 + 5 = …"],
+          "umpanBalik": [{ "jawaban": 5, "pesan": "5 adalah isi baris paling bawah. Hitung semua: 1 + 2 + 3 + 4 + 5." }],
+          "umpanBalikUmum": "Jumlahkan isi semua baris."
+        },
+        {
+          "id": "kaleng-2", "tipe": "isian-angka", "level": "L2", "proses": ["LM2", "LM3"],
+          "pertanyaan": "Berapa kaleng yang dibutuhkan untuk tumpukan 8 baris?", "satuan": "kaleng", "jawaban": 36,
+          "petunjuk": ["Tumpukan kaleng mengikuti pola segitiga.", "Gunakan Uₙ = n(n + 1)/2 dengan n = 8.", "8 × 9 : 2 = …"],
+          "umpanBalik": [
+            { "jawaban": 72, "pesan": "8 × 9 = 72 adalah dua tumpukan. Bagi 2." },
+            { "jawaban": 64, "pesan": "8 × 8 adalah pola persegi, bukan segitiga." }
+          ],
+          "umpanBalikUmum": "Ubah cerita menjadi pola segitiga, lalu pakai rumusnya."
+        },
+        {
+          "id": "kaleng-3", "tipe": "isian-angka", "level": "L3", "proses": ["LM3", "LM4", "LM5"],
+          "pertanyaan": "Dengan 50 kaleng, paling banyak berapa baris lengkap yang bisa dibuat Bu Sari?", "satuan": "baris", "jawaban": 9,
+          "petunjuk": ["Hitung kaleng untuk 8, 9, dan 10 baris.", "8 baris = 36, 9 baris = 45, 10 baris = 55.", "Mana yang masih cukup dengan 50 kaleng?"],
+          "umpanBalik": [
+            { "jawaban": 10, "pesan": "10 baris butuh 10 × 11 : 2 = 55 kaleng. Itu lebih dari 50!" },
+            { "jawaban": 50, "pesan": "50 adalah banyak kaleng, bukan banyak baris." }
+          ],
+          "umpanBalikUmum": "Cari banyak baris terbesar yang kalengnya tidak lebih dari 50.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Tumpukan 9 baris memakai 45 kaleng. Apa artinya untuk kaleng yang tersisa?", "pilihan": ["Tersisa 5 kaleng, tidak cukup untuk baris ke-10 yang butuh 10 kaleng", "Tersisa 5 kaleng, jadi baris ke-10 bisa dibuat", "Tidak ada kaleng yang tersisa"], "jawaban": 0, "penjelasan": "Tepat. 50 − 45 = 5, sedangkan baris ke-10 butuh 10 kaleng.", "penjelasanSalah": "Hitung 50 − 45, lalu bandingkan dengan isi baris ke-10." }
+          ]
+        },
+        {
+          "id": "kaleng-4", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Tono membandingkan tumpukan 5 baris dan 10 baris.",
+          "tokoh": "Tono", "klaim": "Tumpukan 10 baris memakai kaleng dua kali lipat dari tumpukan 5 baris.", "klaimBenar": false,
+          "alasan": { "pilihan": ["Setuju, karena 10 adalah dua kali 5.", "Tumpukan 10 baris memakai 55 kaleng, sedangkan 5 baris memakai 15 kaleng. 55 lebih dari dua kali 15.", "Tumpukan 10 baris hanya memakai 20 kaleng."], "benar": 1 },
+          "petunjuk": ["Hitung kaleng untuk 5 baris.", "Hitung kaleng untuk 10 baris dengan rumus.", "Bandingkan 55 dengan 2 × 15."],
+          "umpanBalikUmum": "Hitung kedua tumpukan, lalu bandingkan.",
+          "pembahasan": "5 baris = 15 kaleng dan 10 baris = 55 kaleng. Dua kali 15 adalah 30, bukan 55. Pada pola segitiga, banyak kaleng bertambah lebih cepat daripada banyak baris."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Mengapa rumus pola segitiga dibagi 2?",
+    "kalimatAwal": "Rumusnya dibagi 2 karena ",
+    "contohPenjelasan": "Dua segitiga yang sama bisa disusun menjadi persegi panjang n × (n + 1). Satu segitiga adalah setengah dari persegi panjang itu, jadi banyak noktahnya n(n + 1) dibagi 2."
+  },
+  "kuis": [
+    { "id": "m5-k1", "tipe": "isian-angka", "pertanyaan": "Tentukan suku ke-11 pola segitiga 1, 3, 6, 10, …", "pola": [1, 3, 6, 10], "jawaban": 66, "pembahasan": "U₁₁ = 11 × 12 : 2 = 132 : 2 = 66." },
+    { "id": "m5-k2", "tipe": "isian-angka", "pertanyaan": "Berapa hasil 1 + 2 + 3 + … + 30?", "jawaban": 465, "pembahasan": "Ini bilangan segitiga ke-30: 30 × 31 : 2 = 930 : 2 = 465." },
+    { "id": "m5-k3", "tipe": "pilihan-ganda", "pertanyaan": "Barisan manakah yang merupakan pola segitiga?", "pilihan": ["1, 3, 6, 10, 15, …", "1, 3, 5, 7, 9, …", "1, 4, 9, 16, 25, …", "2, 6, 12, 20, 30, …"], "jawaban": 0, "pembahasan": "Selisih 1, 3, 6, 10, 15 adalah +2, +3, +4, +5 (bertambah 1). Itu pola segitiga." },
+    {
+      "id": "m5-k4", "tipe": "pg-kompleks", "pertanyaan": "Perhatikan pola 1, 3, 6, 10, 15, … Tentukan Benar atau Salah.",
+      "pola": [1, 3, 6, 10, 15],
+      "pernyataan": [
+        { "teks": "Selisihnya tetap.", "benar": false, "penjelasan": "Selisihnya +2, +3, +4, +5, jadi tidak tetap." },
+        { "teks": "Suku ke-7 adalah 28.", "benar": true, "penjelasan": "7 × 8 : 2 = 28." },
+        { "teks": "Rumusnya Uₙ = n(n + 1)/2.", "benar": true, "penjelasan": "Rumus pola segitiga adalah n(n + 1)/2." },
+        { "teks": "Suku ke-6 adalah 18.", "benar": false, "penjelasan": "U₆ = 6 × 7 : 2 = 21." }
+      ],
+      "umpanBalikUmum": "Hitung selisihnya dan gunakan rumus n(n + 1)/2."
+    }
+  ]
+}

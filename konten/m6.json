@@ -1,0 +1,238 @@
+{
+  "id": "m6",
+  "kode": "M6",
+  "judul": "Pola Fibonacci",
+  "tujuan": [
+    "Mengenali barisan yang setiap sukunya adalah jumlah dua suku sebelumnya (TP2)",
+    "Melanjutkan barisan Fibonacci dan mencari suku yang hilang (TP1, TP5)",
+    "Membedakan pola Fibonacci dengan pola selisih tetap (TP2)",
+    "Memakai pola Fibonacci untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Aturan baru: dijumlahkan",
+      "video": { "judul": "Pola Fibonacci", "src": "" },
+      "visual": { "jenis": "barisan", "pola": [1, 1, 2, 3, 5, 8], "tampilkanSelisih": false, "tanya": 0 },
+      "teks": [
+        "Perhatikan barisan 1, 1, 2, 3, 5, 8.",
+        "Setiap suku adalah **jumlah dua suku sebelumnya**."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Melihat penjumlahannya",
+      "visual": { "jenis": "tabel", "kolom": ["Suku ke-", "Penjumlahan", "Hasil"], "baris": [[3, "1 + 1", 2], [4, "1 + 2", 3], [5, "2 + 3", 5], [6, "3 + 5", 8]] },
+      "teks": [
+        "Suku ke-3 adalah suku ke-1 ditambah suku ke-2.",
+        "Begitu seterusnya untuk suku-suku berikutnya."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Selisihnya tidak tetap",
+      "visual": { "jenis": "barisan", "pola": [1, 1, 2, 3, 5, 8, 13], "tampilkanSelisih": true, "tanya": 0 },
+      "teks": [
+        "Selisih antarsukunya 0, 1, 1, 2, 3, 5.",
+        "Selisihnya berubah-ubah, jadi ini bukan pola selisih tetap."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Awal yang berbeda",
+      "visual": { "jenis": "barisan", "pola": [2, 5, 7, 12, 19], "tampilkanSelisih": false, "tanya": 0 },
+      "teks": [
+        "Aturan Fibonacci bisa dimulai dari dua bilangan lain.",
+        "Contohnya: 2 + 5 = 7, lalu 5 + 7 = 12."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Mencari suku yang hilang",
+      "visual": { "jenis": "tabel", "kolom": ["U₁", "U₂", "U₃"], "baris": [[3, "?", 10]] },
+      "teks": [
+        "Jika satu suku hilang, pakai aturan penjumlahan secara terbalik.",
+        "Karena 3 + U₂ = 10, suku yang hilang adalah 10 − 3 = 7."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Lanjutkan barisan 1, 2, 3, 5, 8, … dengan dua suku lagi.",
+      "visual": { "jenis": "barisan", "pola": [1, 2, 3, 5, 8], "tanya": 2 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Suku-sukunya 1, 2, 3, 5, 8." },
+        { "label": "2. Cari lompatan", "teks": "Selisihnya +1, +1, +2, +3. Selisihnya tidak tetap." },
+        { "label": "3. Periksa", "teks": "1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8 ✓. Ini aturan Fibonacci." },
+        { "label": "4. Lanjutkan", "teks": "5 + 8 = **13**, lalu 8 + 13 = **21**." },
+        { "label": "5. Cek ulang", "teks": "Setiap suku baru adalah jumlah dua suku tepat di depannya ✓." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Barisan Fibonacci 4, …, 10, 16, … Tentukan suku ke-2.",
+      "visual": { "jenis": "tabel", "kolom": ["U₁", "U₂", "U₃", "U₄"], "baris": [[4, "?", 10, 16]] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "U₁ = 4, U₃ = 10, U₄ = 16. U₂ belum diketahui." },
+        { "label": "2. Pakai aturan", "teks": "U₃ = U₁ + U₂, jadi 10 = 4 + U₂." },
+        { "label": "3. Hitung", "teks": "U₂ = 10 − 4 = **6**." },
+        { "label": "4. Cek ulang", "teks": "U₄ = U₂ + U₃ = 6 + 10 = 16 ✓." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Lanjutkan barisan 3, 4, 7, 11, … dengan satu suku lagi.",
+      "visual": { "jenis": "barisan", "pola": [3, 4, 7, 11] },
+      "langkah": [
+        { "label": "1–3. Amati, cari aturan, periksa", "teks": "3 + 4 = 7 dan 4 + 7 = 11. Aturannya: jumlah dua suku sebelumnya." },
+        { "label": "4. Lanjutkan", "teks": "Jumlahkan dua suku terakhir.", "kosong": { "tipe": "isian-angka", "label": "Suku berikutnya =", "jawaban": 18, "petunjuk": "7 + 11 = ?", "penjelasan": "7 + 11 = 18." } }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Barisan Fibonacci 5, …, 13, … Tentukan U₂ dan U₄.",
+      "visual": { "jenis": "tabel", "kolom": ["U₁", "U₂", "U₃", "U₄"], "baris": [[5, "?", 13, "?"]] },
+      "langkah": [
+        { "label": "1–2. Amati & pakai aturan", "teks": "U₃ = U₁ + U₂, jadi 13 = 5 + U₂." },
+        { "label": "3. Hitung U₂", "teks": "Hitung suku yang hilang.", "kosong": { "tipe": "isian-angka", "label": "U₂ =", "jawaban": 8, "petunjuk": "13 − 5 = ?", "penjelasan": "U₂ = 13 − 5 = 8." } },
+        { "label": "4. Hitung U₄", "teks": "U₄ = U₂ + U₃.", "kosong": { "tipe": "isian-angka", "label": "U₄ =", "jawaban": 21, "petunjuk": "8 + 13 = ?", "penjelasan": "U₄ = 8 + 13 = 21." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m6-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Tentukan suku berikutnya dari barisan 2, 2, 4, 6, 10, …",
+      "pola": [2, 2, 4, 6, 10], "cekAturan": false, "jawaban": 16,
+      "petunjuk": ["Coba jumlahkan dua suku yang berdampingan: 2 + 2 = 4.", "2 + 4 = 6, 4 + 6 = 10. Aturannya jumlah dua suku sebelumnya.", "Suku berikutnya = 6 + 10."],
+      "umpanBalik": [
+        { "jawaban": 14, "pesan": "Kamu menambah 4 seperti selisih terakhir. Pada barisan ini, jumlahkan dua suku terakhir: 6 + 10." },
+        { "jawaban": 12, "pesan": "Coba jumlahkan dua suku terakhir: 6 + 10." }
+      ],
+      "umpanBalikUmum": "Selisihnya tidak tetap. Periksa apakah setiap suku adalah jumlah dua suku sebelumnya."
+    },
+    {
+      "id": "m6-l2", "tipe": "lengkapi-tabel", "tingkat": 2,
+      "pertanyaan": "Barisan berikut mengikuti aturan Fibonacci. Lengkapi suku yang kosong.",
+      "tabel": { "kolom": ["Suku ke-", "1", "2", "3", "4", "5", "6"], "baris": [["Nilai", 1, 3, 4, null, 11, null]] },
+      "kunciTabel": [7, 18],
+      "petunjuk": ["Setiap suku = jumlah dua suku sebelumnya.", "Suku ke-4 = suku ke-2 + suku ke-3 = 3 + 4.", "Suku ke-6 = suku ke-4 + suku ke-5."],
+      "umpanBalikUmum": "Jumlahkan dua suku tepat di depan kotak yang kosong. Cek: suku ke-5 harus sama dengan suku ke-3 + suku ke-4."
+    },
+    {
+      "id": "m6-l3", "tipe": "pilihan-ganda", "tingkat": 2,
+      "pertanyaan": "Barisan manakah yang mengikuti aturan Fibonacci (jumlah dua suku sebelumnya)?",
+      "pilihan": ["2, 3, 5, 8, 13, …", "2, 4, 6, 8, 10, …", "1, 2, 4, 8, 16, …", "1, 3, 6, 10, 15, …"], "jawaban": 0,
+      "petunjuk": ["Pada setiap pilihan, jumlahkan dua suku pertama.", "Apakah hasilnya sama dengan suku ketiga?", "Cek juga suku berikutnya."],
+      "umpanBalik": [
+        { "jawaban": 1, "pesan": "2 + 4 = 6 cocok, tetapi 4 + 6 = 10, bukan 8. Barisan ini selisih tetap." },
+        { "jawaban": 2, "pesan": "1 + 2 = 3, bukan 4. Barisan ini selalu dikali 2." },
+        { "jawaban": 3, "pesan": "1 + 3 = 4, bukan 6. Ini pola segitiga." }
+      ],
+      "umpanBalikUmum": "Jumlahkan dua suku berdampingan, lalu bandingkan dengan suku berikutnya."
+    },
+    {
+      "id": "m6-l4", "tipe": "isian-angka", "tingkat": 3,
+      "pertanyaan": "Pada barisan Fibonacci 3, …, 11, … berapakah suku ke-2?",
+      "jawaban": 8,
+      "petunjuk": ["Suku ke-3 = suku ke-1 + suku ke-2.", "Jadi 11 = 3 + suku ke-2.", "Suku ke-2 = 11 − 3."],
+      "umpanBalik": [{ "jawaban": 14, "pesan": "Kamu menjumlahkan 3 + 11. Suku ke-3 adalah hasil penjumlahan, jadi suku ke-2 = 11 − 3." }],
+      "umpanBalikUmum": "Pakai aturan Fibonacci secara terbalik: kurangkan.",
+      "pembahasan": "U₃ = U₁ + U₂, jadi 11 = 3 + U₂ dan U₂ = 8. Cek: 3 + 8 = 11 ✓."
+    },
+    {
+      "id": "m6-l5", "tipe": "pg-kompleks", "tingkat": 2,
+      "pertanyaan": "Perhatikan barisan 1, 1, 2, 3, 5, 8, 13, 21, … Tentukan Benar atau Salah.",
+      "pernyataan": [
+        { "teks": "Suku ke-9 adalah 34.", "benar": true, "penjelasan": "13 + 21 = 34." },
+        { "teks": "Selisih antarsukunya tetap.", "benar": false, "penjelasan": "Selisihnya 0, 1, 1, 2, 3, 5, … berubah-ubah." },
+        { "teks": "Suku ke-3, ke-6, dan ke-9 (2, 8, 34) adalah bilangan genap.", "benar": true, "penjelasan": "2, 8, dan 34 habis dibagi 2." },
+        { "teks": "Suku ke-10 adalah 54.", "benar": false, "penjelasan": "Suku ke-10 = 21 + 34 = 55." }
+      ],
+      "petunjuk": ["Lanjutkan barisan: 13 + 21 = …", "Hitung selisih beberapa pasang suku.", "Suku ke-10 = suku ke-8 + suku ke-9."],
+      "umpanBalikUmum": "Lanjutkan barisan dengan menjumlahkan dua suku terakhir, lalu periksa setiap pernyataan."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "tangga-panggung",
+      "judul": "Tangga Rumah Panggung",
+      "konteks": "personal",
+      "tahapSiklus": "B",
+      "teks": "Tangga rumah panggung Kakek punya 6 anak tangga.\nSaat naik, Adi selalu melangkah 1 atau 2 anak tangga sekaligus.\nUntuk 1 anak tangga ada 1 cara, untuk 2 anak tangga ada 2 cara, dan untuk 3 anak tangga ada 3 cara.",
+      "visual": { "jenis": "tabel", "kolom": ["Banyak anak tangga", "1", "2", "3"], "baris": [["Banyak cara", 1, 2, 3]] },
+      "glosarium": [{ "istilah": "rumah panggung", "arti": "rumah berlantai tinggi yang ditopang tiang-tiang" }],
+      "infoPenting": ["6 anak tangga", "1 atau 2 anak tangga", "1 cara", "2 cara", "3 cara"],
+      "ditanya": "banyak cara Adi menaiki tangga",
+      "soal": [
+        {
+          "id": "tangga-1", "tipe": "pilihan-ganda", "level": "L1", "proses": ["LM1"],
+          "pertanyaan": "Untuk 2 anak tangga ada 2 cara. Manakah kedua cara itu?",
+          "pilihan": ["1 + 1 dan 2", "1 + 1 dan 1 + 1", "2 dan 2 + 2"], "jawaban": 0,
+          "petunjuk": ["Adi bisa melangkah 1 atau 2 anak tangga sekaligus.", "Cara pertama: dua kali melangkah 1.", "Cara kedua: sekali melangkah 2."],
+          "umpanBalik": [
+            { "jawaban": 1, "pesan": "Kedua cara itu sama. Cari dua cara yang berbeda." },
+            { "jawaban": 2, "pesan": "2 + 2 berarti 4 anak tangga, padahal tangganya hanya 2." }
+          ],
+          "umpanBalikUmum": "Tulis langkah-langkah yang jumlahnya 2."
+        },
+        {
+          "id": "tangga-2", "tipe": "isian-angka", "level": "L2", "proses": ["LM2", "LM3"],
+          "pertanyaan": "Untuk 4 anak tangga, ada berapa cara?", "satuan": "cara", "jawaban": 5,
+          "petunjuk": ["Langkah terakhir Adi bisa 1 atau 2 anak tangga.", "Jika langkah terakhir 1, sebelumnya ada 3 anak tangga (3 cara). Jika langkah terakhir 2, sebelumnya ada 2 anak tangga (2 cara).", "3 + 2 = …"],
+          "umpanBalik": [
+            { "jawaban": 4, "pesan": "Coba daftar semua cara: 1+1+1+1, 1+1+2, 1+2+1, 2+1+1, 2+2. Ada berapa?" },
+            { "jawaban": 6, "pesan": "Ada cara yang terhitung dua kali. Daftar ulang dengan teliti." }
+          ],
+          "umpanBalikUmum": "Daftar semua cara dengan teliti, atau jumlahkan banyak cara untuk 3 dan 2 anak tangga."
+        },
+        {
+          "id": "tangga-3", "tipe": "isian-angka", "level": "L3", "proses": ["LM3", "LM4"],
+          "pertanyaan": "Ada berapa cara Adi menaiki seluruh 6 anak tangga?", "satuan": "cara", "jawaban": 13,
+          "petunjuk": ["Banyak cara: 1, 2, 3, 5 untuk 1 sampai 4 anak tangga.", "Untuk 5 anak tangga: 3 + 5 = 8 cara.", "Untuk 6 anak tangga: 5 + 8 = …"],
+          "umpanBalik": [
+            { "jawaban": 8, "pesan": "8 adalah banyak cara untuk 5 anak tangga. Untuk 6 anak tangga: 5 + 8." },
+            { "jawaban": 12, "pesan": "Pola selisih tetap tidak berlaku di sini. Pakai jumlah dua sebelumnya: 5 + 8." }
+          ],
+          "umpanBalikUmum": "Banyak cara mengikuti aturan Fibonacci: jumlahkan dua hasil sebelumnya.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Mengapa banyak cara untuk 6 anak tangga = banyak cara untuk 5 anak tangga + banyak cara untuk 4 anak tangga?", "pilihan": ["Karena langkah terakhir Adi hanya bisa dari anak tangga ke-5 (melangkah 1) atau dari anak tangga ke-4 (melangkah 2)", "Karena 6 = 5 + 4", "Karena Adi selalu melangkah 2 anak tangga"], "jawaban": 0, "penjelasan": "Tepat. Setiap cara pasti berakhir dengan langkah 1 atau langkah 2, jadi kedua kelompok cara itu dijumlahkan.", "penjelasanSalah": "6 bukan 5 + 4. Pikirkan dari mana langkah terakhir Adi menuju anak tangga ke-6." }
+          ]
+        },
+        {
+          "id": "tangga-4", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Sinta membandingkan banyak cara untuk 3 dan 6 anak tangga.",
+          "tokoh": "Sinta", "klaim": "Banyak cara untuk 6 anak tangga sama dengan dua kali banyak cara untuk 3 anak tangga.", "klaimBenar": false,
+          "alasan": { "pilihan": ["Setuju, karena 6 = 2 × 3.", "Untuk 6 anak tangga ada 13 cara, sedangkan dua kali banyak cara untuk 3 anak tangga hanya 6.", "Untuk 6 anak tangga hanya ada 4 cara."], "benar": 1 },
+          "petunjuk": ["Untuk 3 anak tangga ada 3 cara.", "Untuk 6 anak tangga ada 13 cara.", "Bandingkan 13 dengan 2 × 3."],
+          "umpanBalikUmum": "Hitung kedua banyak cara, lalu bandingkan.",
+          "pembahasan": "Untuk 3 anak tangga ada 3 cara, jadi dua kalinya 6. Untuk 6 anak tangga ada 13 cara. Pada pola Fibonacci, banyak cara bertambah jauh lebih cepat, jadi tidak bisa dihitung dengan mengalikan dua."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Apa bedanya pola Fibonacci dengan pola selisih tetap (M2)?",
+    "kalimatAwal": "Pada pola selisih tetap, ",
+    "contohPenjelasan": "Pada pola selisih tetap, setiap suku didapat dengan menambah bilangan yang sama. Pada pola Fibonacci, setiap suku didapat dengan menjumlahkan dua suku sebelumnya, sehingga selisihnya berubah-ubah."
+  },
+  "kuis": [
+    { "id": "m6-k1", "tipe": "isian-angka", "pertanyaan": "Tentukan suku berikutnya dari barisan 5, 5, 10, 15, 25, …", "pola": [5, 5, 10, 15, 25], "jawaban": 40, "pembahasan": "15 + 25 = 40." },
+    { "id": "m6-k2", "tipe": "isian-angka", "pertanyaan": "Barisan Fibonacci 2, 7, 9, 16, … Tentukan suku ke-6.", "pola": [2, 7, 9, 16], "tanya": 2, "jawaban": 41, "pembahasan": "U₅ = 9 + 16 = 25, lalu U₆ = 16 + 25 = 41." },
+    { "id": "m6-k3", "tipe": "pilihan-ganda", "pertanyaan": "Pada barisan Fibonacci 6, …, 20, … berapakah suku ke-2?", "pilihan": ["14", "26", "10", "13"], "jawaban": 0, "pembahasan": "U₃ = U₁ + U₂, jadi 20 = 6 + U₂ dan U₂ = 14." },
+    {
+      "id": "m6-k4", "tipe": "pg-kompleks", "pertanyaan": "Perhatikan barisan 1, 4, 5, 9, 14, … Tentukan Benar atau Salah.",
+      "pola": [1, 4, 5, 9, 14],
+      "pernyataan": [
+        { "teks": "Barisan ini mengikuti aturan Fibonacci.", "benar": true, "penjelasan": "1 + 4 = 5, 4 + 5 = 9, 5 + 9 = 14." },
+        { "teks": "Suku berikutnya adalah 19.", "benar": false, "penjelasan": "Suku berikutnya = 9 + 14 = 23." },
+        { "teks": "Selisih antarsukunya tetap 5.", "benar": false, "penjelasan": "Selisihnya 3, 1, 4, 5, berubah-ubah." },
+        { "teks": "Suku ke-7 adalah 37.", "benar": true, "penjelasan": "U₆ = 9 + 14 = 23, lalu U₇ = 14 + 23 = 37." }
+      ],
+      "umpanBalikUmum": "Periksa aturan penjumlahan, lalu lanjutkan barisan."
+    }
+  ]
+}

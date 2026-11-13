@@ -1,0 +1,13 @@
+{
+  "modul": [
+    {"id": "m0", "kode": "M0", "judul": "Pengingat Prasyarat", "ringkas": "Barisan, suku, urutan, dan selisih", "tersedia": true},
+    {"id": "m1", "kode": "M1", "judul": "Mengenal Pola", "ringkas": "Pola pada benda dan gambar", "tersedia": true},
+    {"id": "m2", "kode": "M2", "judul": "Pola dengan Selisih Tetap", "ringkas": "Lompatan yang selalu sama dan rumus suku ke-n", "tersedia": true},
+    {"id": "m3", "kode": "M3", "judul": "Pola Bilangan Ganjil dan Genap", "ringkas": "2n − 1 dan 2n", "tersedia": true},
+    {"id": "m4", "kode": "M4", "judul": "Pola Persegi dan Persegi Panjang", "ringkas": "n² dan n(n + 1) dari susunan noktah", "tersedia": true},
+    {"id": "m5", "kode": "M5", "judul": "Pola Segitiga", "ringkas": "n(n + 1)/2", "tersedia": true},
+    {"id": "m6", "kode": "M6", "judul": "Pola Fibonacci", "ringkas": "Jumlah dua suku sebelumnya", "tersedia": true},
+    {"id": "m7", "kode": "M7", "judul": "Menentukan Suku ke-n", "ringkas": "Dari aturan ke rumus", "tersedia": false},
+    {"id": "m8", "kode": "M8", "judul": "Literasi: Memecahkan Masalah dengan Pola", "ringkas": "Soal cerita campuran, penalaran, dan keputusan", "tersedia": false}
+  ]
+}

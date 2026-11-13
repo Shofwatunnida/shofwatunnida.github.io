@@ -1,0 +1,255 @@
+{
+  "id": "m2",
+  "kode": "M2",
+  "judul": "Pola dengan Selisih Tetap",
+  "tujuan": [
+    "Menentukan suku berikutnya dengan mengamati selisih antarsuku (TP1)",
+    "Menyatakan aturan pola sebagai rumus suku ke-n (TP3, TP4)",
+    "Memeriksa kebenaran rumus yang ditemukan (TP5)",
+    "Memakai pola untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Barisan dan suku",
+      "video": { "judul": "Mengenal barisan dan suku", "src": "" },
+      "visual": { "jenis": "barisan", "pola": [2, 4, 6, 8], "tampilkanSelisih": false, "tanya": 0 },
+      "teks": [
+        "**Barisan** adalah bilangan-bilangan yang disusun berurutan dengan aturan tertentu.",
+        "Setiap bilangan dalam barisan disebut **suku**.",
+        "Pada barisan di atas, suku ke-1 adalah 2 dan suku ke-4 adalah 8."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Lompatan antarsuku",
+      "visual": { "jenis": "barisan", "pola": [3, 6, 9, 12], "tampilkanSelisih": true, "tanya": 0 },
+      "teks": [
+        "Dari 3 ke 6 bertambah 3. Dari 6 ke 9 juga bertambah 3.",
+        "Lompatan yang selalu sama disebut **selisih tetap**."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Menentukan suku berikutnya",
+      "visual": { "jenis": "barisan", "pola": [5, 9, 13, 17], "tampilkanSelisih": true, "tanya": 1 },
+      "teks": [
+        "Selisihnya selalu +4.",
+        "Jadi suku berikutnya adalah 17 + 4 = **21**."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Dari selisih ke rumus",
+      "visual": { "jenis": "tabel", "kolom": ["n (urutan)", "Suku", "3 × n"], "baris": [[1, 3, 3], [2, 6, 6], [3, 9, 9], [4, 12, 12]] },
+      "teks": [
+        "Pola 3, 6, 9, 12 sama dengan 3 × urutannya.",
+        "Suku ke-n ditulis **Uₙ = 3n**.",
+        "Angka 3 di depan n adalah selisihnya."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Kalau tidak pas, sesuaikan",
+      "visual": { "jenis": "tabel", "kolom": ["n", "3n", "Suku", "Beda"], "baris": [[1, 3, 4, "+1"], [2, 6, 7, "+1"], [3, 9, 10, "+1"], [4, 12, 13, "+1"]] },
+      "teks": [
+        "Pola 4, 7, 10, 13 selisihnya +3, jadi rumusnya diawali **3n**.",
+        "Tetapi setiap suku selalu 1 lebih besar dari 3n.",
+        "Jadi rumusnya **Uₙ = 3n + 1**."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Tentukan suku ke-10 dari pola 2, 5, 8, 11, …",
+      "visual": { "jenis": "barisan", "pola": [2, 5, 8, 11] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Suku-suku yang diketahui: 2, 5, 8, 11." },
+        { "label": "2. Cari lompatan", "teks": "5 − 2 = 3, 8 − 5 = 3, 11 − 8 = 3.", "visual": { "jenis": "barisan", "pola": [2, 5, 8, 11], "tampilkanSelisih": true, "tanya": 0 } },
+        { "label": "3. Periksa", "teks": "Selisihnya selalu **+3**, jadi selisihnya tetap. Rumusnya diawali **3n**." },
+        { "label": "4. Rumuskan", "teks": "Untuk n = 1, 3n = 3, padahal suku ke-1 adalah 2. Jadi kurangi 1: **Uₙ = 3n − 1**." },
+        { "label": "5. Cek ulang", "teks": "n = 2: 3(2) − 1 = 5 ✓. n = 3: 3(3) − 1 = 8 ✓. Jadi U₁₀ = 3(10) − 1 = **29**." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Tentukan suku ke-20 dari pola 10, 14, 18, 22, …",
+      "visual": { "jenis": "barisan", "pola": [10, 14, 18, 22] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Suku-suku yang diketahui: 10, 14, 18, 22." },
+        { "label": "2. Cari lompatan", "teks": "14 − 10 = 4, 18 − 14 = 4, 22 − 18 = 4." },
+        { "label": "3. Periksa", "teks": "Selisihnya selalu **+4**. Rumusnya diawali **4n**." },
+        { "label": "4. Rumuskan", "teks": "Untuk n = 1, 4n = 4, padahal suku ke-1 adalah 10. Jadi tambah 6: **Uₙ = 4n + 6**." },
+        { "label": "5. Cek ulang", "teks": "n = 2: 4(2) + 6 = 14 ✓. n = 3: 4(3) + 6 = 18 ✓. Jadi U₂₀ = 4(20) + 6 = **86**." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Tentukan suku ke-8 dari pola 6, 11, 16, 21, …",
+      "visual": { "jenis": "barisan", "pola": [6, 11, 16, 21] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Suku-suku yang diketahui: 6, 11, 16, 21." },
+        { "label": "2. Cari lompatan", "teks": "Hitung selisih antarsuku.", "kosong": { "tipe": "isian-angka", "label": "Selisihnya = +", "jawaban": 5, "petunjuk": "Hitung 11 − 6.", "penjelasan": "11 − 6 = 5, 16 − 11 = 5." } },
+        { "label": "3–4. Periksa & rumuskan", "teks": "Selisih tetap 5, jadi diawali 5n. Untuk n = 1, 5n = 5, padahal suku ke-1 adalah 6. Jadi **Uₙ = 5n + 1**." },
+        { "label": "5. Cek ulang", "teks": "n = 2: 5(2) + 1 = 11 ✓. Jadi U₈ = 5(8) + 1 = **41**." }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Tentukan suku ke-12 dari pola 7, 9, 11, 13, …",
+      "visual": { "jenis": "barisan", "pola": [7, 9, 11, 13] },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Selisihnya selalu +2, jadi rumusnya diawali **2n**." },
+        { "label": "4. Rumuskan", "teks": "Untuk n = 1, 2n = 2, padahal suku ke-1 adalah 7. Berapa yang harus ditambahkan?", "kosong": { "tipe": "isian-rumus", "label": "Uₙ =", "jawaban": "2n+5", "petunjuk": "7 − 2 = 5. Jadi 2n ditambah 5.", "penjelasan": "Uₙ = 2n + 5. Cek n = 2: 2(2) + 5 = 9 ✓." } },
+        { "label": "5. Hitung & cek", "teks": "Sekarang hitung suku ke-12 dengan rumusmu.", "kosong": { "tipe": "isian-angka", "label": "U₁₂ =", "jawaban": 29, "petunjuk": "Ganti n dengan 12: 2(12) + 5.", "penjelasan": "2(12) + 5 = 24 + 5 = 29." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m2-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Tentukan suku berikutnya dari pola 5, 8, 11, 14, …",
+      "pola": [5, 8, 11, 14], "jawaban": 17,
+      "petunjuk": ["Perhatikan berapa lompatan dari satu suku ke suku berikutnya.", "Lompatannya selalu +3.", "Suku berikutnya = 14 + 3 = …"],
+      "umpanBalik": [{ "jawaban": 15, "pesan": "Itu 14 + 1. Coba hitung lompatannya: 8 − 5 = ?" }, { "jawaban": 18, "pesan": "Hampir! Lompatannya +3, bukan +4. Hitung lagi 8 − 5." }],
+      "umpanBalikUmum": "Coba hitung lompatan antarsuku dulu, lalu tambahkan ke suku terakhir."
+    },
+    {
+      "id": "m2-l2", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Tentukan suku ke-8 dari pola 2, 6, 10, 14, …",
+      "pola": [2, 6, 10, 14], "jawaban": 30,
+      "petunjuk": ["Cari dulu lompatannya. Berapa 6 − 2?", "Selisihnya +4, jadi rumusnya diawali 4n. Bandingkan 4n dengan suku ke-1.", "Untuk n = 1, 4n = 4, padahal suku ke-1 adalah 2. Jadi Uₙ = 4n − 2. Ganti n dengan 8."],
+      "umpanBalik": [
+        { "jawaban": 18, "pesan": "Itu suku ke-5. Yang ditanya suku ke-8. Lanjutkan polanya, atau pakai rumus." },
+        { "jawaban": 32, "pesan": "Kamu memakai 4 × 8. Cek suku ke-1: 4 × 1 = 4, padahal suku ke-1 adalah 2. Apa yang perlu disesuaikan?" },
+        { "jawaban": 34, "pesan": "Kamu menghitung 2 + 8 × 4. Ingat, dari suku ke-1 ke suku ke-8 hanya ada 7 lompatan." }
+      ],
+      "umpanBalikUmum": "Temukan rumus suku ke-n dulu, lalu cek ke suku ke-1 dan ke-2."
+    },
+    {
+      "id": "m2-l3", "tipe": "lengkapi-tabel", "tingkat": 2,
+      "pertanyaan": "Lengkapi suku yang hilang pada pola 7, …, 17, 22, …",
+      "tabel": { "kolom": ["n", "1", "2", "3", "4", "5"], "baris": [["Uₙ", 7, null, 17, 22, null]] },
+      "kunciTabel": [12, 27],
+      "petunjuk": ["Lihat dua suku yang berdampingan: 17 dan 22.", "Selisihnya 22 − 17 = 5. Pola ini bertambah 5 setiap langkah.", "Suku ke-2 = 7 + 5. Suku ke-5 = 22 + 5."],
+      "umpanBalikUmum": "Cari selisih dari dua suku yang berdampingan (17 dan 22), lalu pakai untuk mengisi yang kosong."
+    },
+    {
+      "id": "m2-l4", "tipe": "pilihan-ganda", "tingkat": 2,
+      "pertanyaan": "Rumus suku ke-n dari pola 4, 7, 10, 13, … adalah …",
+      "pola": [4, 7, 10, 13],
+      "pilihan": ["Uₙ = 3n + 1", "Uₙ = n + 3", "Uₙ = 4n", "Uₙ = 3n + 4"],
+      "jawaban": 0,
+      "petunjuk": ["Cari selisihnya dulu.", "Selisihnya +3, jadi rumusnya diawali 3n.", "Uji setiap pilihan untuk n = 1. Mana yang hasilnya 4?"],
+      "umpanBalik": [
+        { "jawaban": 1, "pesan": "Cek n = 2: 2 + 3 = 5, padahal suku ke-2 adalah 7." },
+        { "jawaban": 2, "pesan": "4n memberi 4, 8, 12, … Selisihnya 4, bukan 3." },
+        { "jawaban": 3, "pesan": "Cek n = 1: 3(1) + 4 = 7, padahal suku ke-1 adalah 4." }
+      ],
+      "umpanBalikUmum": "Uji rumus pada suku ke-1 dan ke-2."
+    },
+    {
+      "id": "m2-l5", "tipe": "isian-rumus", "tingkat": 3,
+      "pertanyaan": "Tentukan rumus suku ke-n dari pola 1, 4, 7, 10, 13, …",
+      "pola": [1, 4, 7, 10, 13], "jawaban": "3n-2",
+      "petunjuk": ["Berapa selisih antarsukunya?", "Selisihnya +3, jadi rumusnya diawali 3n. Untuk n = 1, 3n = 3.", "Suku ke-1 adalah 1, sedangkan 3n = 3. Jadi 3n dikurangi 2."],
+      "umpanBalik": [
+        { "jawaban": "3n+1", "pesan": "Cek n = 1: 3(1) + 1 = 4, padahal suku ke-1 adalah 1." },
+        { "jawaban": "3n", "pesan": "3n memberi 3, 6, 9, … Selalu lebih 2 dari pola. Bagaimana memperbaikinya?" },
+        { "jawaban": "n+3", "pesan": "n + 3 memberi 4, 5, 6, … Selisihnya hanya 1. Angka di depan n harus sama dengan selisihnya." }
+      ],
+      "umpanBalikUmum": "Angka di depan n = selisihnya. Lalu sesuaikan agar cocok dengan suku ke-1."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "kursi17",
+      "judul": "Kursi Lomba 17 Agustus",
+      "konteks": "sosial-budaya",
+      "tahapSiklus": "A",
+      "teks": "Panitia desa menyusun kursi penonton untuk lomba 17 Agustus.\nBaris pertama berisi 12 kursi. Setiap baris di belakangnya bertambah 3 kursi.\nLapangan hanya cukup untuk baris yang berisi paling banyak 40 kursi.",
+      "visual": { "jenis": "kursi", "baris": [12, 15, 18] },
+      "glosarium": [{ "istilah": "panitia", "arti": "orang-orang yang mengurus suatu acara" }],
+      "infoPenting": ["12 kursi", "bertambah 3 kursi", "paling banyak 40 kursi"],
+      "ditanya": "banyak kursi di baris tertentu dan banyak baris yang bisa disusun",
+      "ubah": {
+        "pertanyaan": "Lengkapi tabel banyak kursi pada setiap baris.",
+        "tabel": { "kolom": ["Baris ke-", "1", "2", "3", "4", "5"], "baris": [["Banyak kursi", 12, 15, null, null, null]] },
+        "kunciTabel": [18, 21, 24],
+        "petunjuk": ["Setiap baris bertambah berapa kursi?", "Baris ke-3 = 15 + 3.", "Baris ke-3 = 18, baris ke-4 = 18 + 3, dan seterusnya."],
+        "umpanBalikUmum": "Setiap baris bertambah 3 kursi dari baris sebelumnya."
+      },
+      "soal": [
+        {
+          "id": "kursi-1", "tipe": "isian-angka", "level": "L1", "proses": ["LM3"],
+          "pertanyaan": "Berapa kursi pada baris ke-4?", "satuan": "kursi", "jawaban": 21,
+          "petunjuk": ["Lihat tabel yang tadi kamu isi.", "Baris ke-3 berisi 18 kursi.", "Baris ke-4 = 18 + 3."],
+          "umpanBalik": [{ "jawaban": 24, "pesan": "Itu baris ke-5. Hitung lagi dari baris ke-1: 12, 15, 18, …" }],
+          "umpanBalikUmum": "Mulai dari 12, lalu tambah 3 untuk setiap baris berikutnya.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Angka 21 artinya apa dalam cerita?", "pilihan": ["Ada 21 baris kursi", "Baris ke-4 berisi 21 kursi", "Semua kursi berjumlah 21"], "jawaban": 1, "penjelasan": "Benar. 21 adalah banyak kursi di baris ke-4, bukan banyak baris atau jumlah semua kursi.", "penjelasanSalah": "Baca lagi pertanyaannya: yang dihitung adalah isi satu baris." }
+          ]
+        },
+        {
+          "id": "kursi-2", "tipe": "pilihan-ganda", "level": "L2", "proses": ["LM2", "LM3"],
+          "pertanyaan": "Rumus banyak kursi pada baris ke-n adalah …",
+          "pilihan": ["3n + 12", "3n + 9", "12n + 3", "n + 3"], "jawaban": 1,
+          "petunjuk": ["Kursi bertambah 3 setiap baris, jadi rumusnya diawali 3n.", "Untuk n = 1, 3n = 3, padahal baris ke-1 berisi 12 kursi.", "12 − 3 = 9. Jadi 3n + 9."],
+          "umpanBalik": [
+            { "jawaban": 0, "pesan": "Cek baris ke-1: 3(1) + 12 = 15, padahal baris pertama berisi 12 kursi." },
+            { "jawaban": 2, "pesan": "12n berarti bertambah 12 setiap baris. Di cerita, kursi bertambah 3." },
+            { "jawaban": 3, "pesan": "n + 3 berarti bertambah 1 setiap baris. Di cerita, kursi bertambah 3." }
+          ],
+          "umpanBalikUmum": "Uji rumus untuk baris ke-1 dan ke-2."
+        },
+        {
+          "id": "kursi-3", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Andi menghitung banyak kursi di baris ke-10.",
+          "tokoh": "Andi", "klaim": "Baris ke-10 berisi 42 kursi.", "klaimBenar": false,
+          "alasan": { "pilihan": ["42 terlalu banyak untuk satu baris.", "Baris ke-1 belum bertambah, jadi 12 + 9 × 3 = 39 kursi.", "Polanya dikali 3, jadi 12 × 3 = 36 kursi."], "benar": 1 },
+          "petunjuk": ["Hitung sendiri banyak kursi di baris ke-10.", "Pakai rumus 3n + 9 dengan n = 10.", "3(10) + 9 = 39. Andi mungkin menghitung 12 + 10 × 3."],
+          "umpanBalikUmum": "Coba hitung dengan rumus 3n + 9 untuk n = 10, lalu bandingkan dengan klaim Andi.",
+          "pembahasan": "Baris ke-10 berisi 3(10) + 9 = 39 kursi. Andi keliru karena menghitung 10 lompatan, padahal dari baris ke-1 ke baris ke-10 hanya ada 9 lompatan."
+        },
+        {
+          "id": "kursi-4", "tipe": "isian-angka", "level": "L3", "proses": ["LM3", "LM4", "LM5"],
+          "pertanyaan": "Paling banyak berapa baris kursi yang bisa disusun panitia?", "satuan": "baris", "jawaban": 10,
+          "petunjuk": ["Satu baris paling banyak 40 kursi. Baris ke berapa yang masih ≤ 40?", "Coba hitung: baris ke-10 = 3(10) + 9 = 39. Baris ke-11 = ?", "Baris ke-11 = 3(11) + 9 = 42, lebih dari 40."],
+          "umpanBalik": [
+            { "jawaban": 10.33, "toleransi": 0.04, "pesan": "Hitunganmu benar, tetapi bisakah ada 0,33 baris? Kembalikan ke cerita." },
+            { "jawaban": 11, "pesan": "Baris ke-11 berisi 3(11) + 9 = 42 kursi. Itu lebih dari 40!" },
+            { "jawaban": 9, "pesan": "Baris ke-10 berisi 39 kursi, masih ≤ 40. Jadi baris ke-10 masih boleh." }
+          ],
+          "umpanBalikUmum": "Cari baris terakhir yang isinya masih paling banyak 40 kursi.",
+          "pertanyaanCekCerita": [
+            { "tanya": "Jika dihitung 3n + 9 ≤ 40, didapat n ≤ 10,33. Bolehkah banyak baris berupa pecahan?", "pilihan": ["Boleh, jadi 10,33 baris", "Tidak boleh. Baris harus bilangan bulat, jadi 10 baris", "Dibulatkan ke atas, jadi 11 baris"], "jawaban": 1, "penjelasan": "Tepat. Tidak ada sepertiga baris kursi. Baris ke-11 berisi 42 kursi (lebih dari 40), jadi paling banyak 10 baris.", "penjelasanSalah": "Pikirkan: bisakah panitia menyusun sepertiga baris? Bagaimana dengan baris ke-11 yang berisi 42 kursi?" }
+          ]
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Bagaimana caramu menemukan rumus suku ke-n dari pola yang selisihnya tetap?",
+    "kalimatAwal": "Pertama, aku ",
+    "contohPenjelasan": "Aku mencari selisih antarsuku. Kalau selisihnya tetap, misalnya 3, rumusnya diawali 3n. Lalu aku bandingkan 3n dengan suku ke-1, kemudian menambah atau mengurangi supaya cocok. Terakhir, aku cek rumusnya ke suku ke-2 dan ke-3."
+  },
+  "kuis": [
+    { "id": "m2-k1", "tipe": "isian-angka", "pertanyaan": "Tentukan suku berikutnya dari pola 9, 15, 21, 27, …", "pola": [9, 15, 21, 27], "jawaban": 33, "pembahasan": "Selisihnya +6, jadi 27 + 6 = 33." },
+    { "id": "m2-k2", "tipe": "isian-angka", "pertanyaan": "Tentukan suku ke-15 dari pola 3, 7, 11, 15, …", "pola": [3, 7, 11, 15], "jawaban": 59, "pembahasan": "Selisih +4, rumus Uₙ = 4n − 1. U₁₅ = 4(15) − 1 = 59." },
+    { "id": "m2-k3", "tipe": "isian-rumus", "pertanyaan": "Tentukan rumus suku ke-n dari pola 8, 13, 18, 23, …", "pola": [8, 13, 18, 23], "jawaban": "5n+3", "pembahasan": "Selisih +5, jadi 5n. Untuk n = 1, 5n = 5, padahal suku ke-1 adalah 8. Jadi Uₙ = 5n + 3." },
+    {
+      "id": "m2-k4", "tipe": "pg-kompleks", "pertanyaan": "Perhatikan pola 5, 9, 13, 17, … Tentukan Benar atau Salah.",
+      "pola": [5, 9, 13, 17],
+      "pernyataan": [
+        { "teks": "Selisihnya +4.", "benar": true, "penjelasan": "9 − 5 = 4, jadi selisihnya +4." },
+        { "teks": "Suku ke-6 adalah 25.", "benar": true, "penjelasan": "Uₙ = 4n + 1, jadi U₆ = 25." },
+        { "teks": "Rumusnya Uₙ = 5n + 4.", "benar": false, "penjelasan": "Cek n = 1: 5 + 4 = 9, bukan 5. Rumus yang benar 4n + 1." },
+        { "teks": "Suku ke-10 adalah 41.", "benar": true, "penjelasan": "4(10) + 1 = 41." }
+      ],
+      "umpanBalikUmum": "Uji setiap pernyataan dengan rumus 4n + 1."
+    }
+  ]
+}

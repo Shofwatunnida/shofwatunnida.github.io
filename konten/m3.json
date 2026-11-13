@@ -1,0 +1,234 @@
+{
+  "id": "m3",
+  "kode": "M3",
+  "judul": "Pola Bilangan Ganjil dan Genap",
+  "tujuan": [
+    "Mengenali pola bilangan genap dan ganjil dari susunan noktah (TP2)",
+    "Menyatakan rumus 2n dan 2n − 1 (TP3)",
+    "Menentukan bilangan genap atau ganjil ke-n dengan rumus (TP4)",
+    "Memakai pola ganjil dan genap untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Bilangan genap dari noktah",
+      "video": { "judul": "Pola genap dan ganjil", "src": "" },
+      "visual": { "jenis": "noktah", "bentuk": "genap", "banyak": 4 },
+      "teks": [
+        "Noktah disusun berpasangan: 2, 4, 6, 8.",
+        "Setiap gambar bertambah satu pasang noktah."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Rumus pola genap",
+      "visual": { "jenis": "tabel", "kolom": ["Gambar ke-n", "Susunan", "Banyak noktah"], "baris": [[1, "2 × 1", 2], [2, "2 × 2", 4], [3, "2 × 3", 6], [4, "2 × 4", 8]] },
+      "teks": [
+        "Gambar ke-n berisi 2 baris, masing-masing n noktah.",
+        "Jadi **Uₙ = 2n**."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Bilangan ganjil dari noktah",
+      "visual": { "jenis": "noktah", "bentuk": "ganjil", "banyak": 4 },
+      "teks": [
+        "Noktah membentuk huruf L: 1, 3, 5, 7.",
+        "Setiap gambar bertambah 2 noktah."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Rumus pola ganjil",
+      "visual": { "jenis": "tabel", "kolom": ["n", "Genap (2n)", "Ganjil"], "baris": [[1, 2, 1], [2, 4, 3], [3, 6, 5], [4, 8, 7]] },
+      "teks": [
+        "Setiap bilangan ganjil selalu 1 kurang dari bilangan genap pasangannya.",
+        "Jadi **Uₙ = 2n − 1**."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Ganjil atau genap?",
+      "visual": { "jenis": "barisan", "pola": [1, 2, 3, 4, 5, 6], "tampilkanSelisih": false, "tanya": 0 },
+      "teks": [
+        "Bilangan genap habis dibagi 2, bilangan ganjil tidak.",
+        "Ganjil dan genap selalu bergantian."
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Berapa noktah pada gambar ke-15 pola genap 2, 4, 6, 8, …?",
+      "visual": { "jenis": "noktah", "bentuk": "genap", "banyak": 3 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Banyak noktah: 2, 4, 6, 8." },
+        { "label": "2. Cari lompatan", "teks": "Selisihnya selalu +2." },
+        { "label": "3. Periksa", "teks": "Suku-sukunya 2 × 1, 2 × 2, 2 × 3, 2 × 4." },
+        { "label": "4. Rumuskan", "teks": "**Uₙ = 2n**." },
+        { "label": "5. Cek ulang", "teks": "n = 3: 2 × 3 = 6 ✓. Jadi U₁₅ = 2 × 15 = **30**." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Tentukan bilangan ganjil ke-20.",
+      "visual": { "jenis": "noktah", "bentuk": "ganjil", "banyak": 3 },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Bilangan ganjil: 1, 3, 5, 7, …" },
+        { "label": "2. Cari lompatan", "teks": "Selisihnya selalu +2." },
+        { "label": "3. Periksa", "teks": "Setiap suku 1 kurang dari bilangan genap: 2 − 1, 4 − 1, 6 − 1." },
+        { "label": "4. Rumuskan", "teks": "**Uₙ = 2n − 1**." },
+        { "label": "5. Cek ulang", "teks": "n = 4: 2 × 4 − 1 = 7 ✓. Jadi U₂₀ = 40 − 1 = **39**." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Tentukan bilangan genap ke-12.",
+      "visual": { "jenis": "noktah", "bentuk": "genap", "banyak": 3 },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Bilangan genap: 2, 4, 6, … Setiap suku = 2 × urutannya." },
+        { "label": "4. Rumuskan", "teks": "Uₙ = 2n." },
+        { "label": "5. Hitung", "teks": "Hitung suku ke-12.", "kosong": { "tipe": "isian-angka", "label": "U₁₂ =", "jawaban": 24, "petunjuk": "2 × 12 = ?", "penjelasan": "2 × 12 = 24." } }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Tentukan rumus bilangan ganjil dan bilangan ganjil ke-30.",
+      "visual": { "jenis": "noktah", "bentuk": "ganjil", "banyak": 3 },
+      "langkah": [
+        { "label": "1–3. Amati, cari lompatan, periksa", "teks": "Bilangan ganjil: 1, 3, 5, 7, … Setiap suku 1 kurang dari 2n." },
+        { "label": "4. Rumuskan", "teks": "Tulis rumus suku ke-n.", "kosong": { "tipe": "isian-rumus", "label": "Uₙ =", "jawaban": "2n-1", "petunjuk": "Bilangan genap ke-n adalah 2n. Ganjil 1 lebih kecil.", "penjelasan": "Uₙ = 2n − 1." } },
+        { "label": "5. Hitung", "teks": "Hitung suku ke-30.", "kosong": { "tipe": "isian-angka", "label": "U₃₀ =", "jawaban": 59, "petunjuk": "2 × 30 − 1 = ?", "penjelasan": "60 − 1 = 59." } }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m3-l1", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Perhatikan pola noktah ganjil. Berapa noktah pada gambar ke-5?",
+      "visual": { "jenis": "noktah", "bentuk": "ganjil", "banyak": 3 }, "jawaban": 9,
+      "petunjuk": ["Banyak noktah: 1, 3, 5, … bertambah 2.", "Gambar ke-4 berisi 7 noktah.", "Gambar ke-5 = 7 + 2."],
+      "umpanBalik": [
+        { "jawaban": 10, "pesan": "10 adalah bilangan genap. Pola ini ganjil: 1, 3, 5, … Hitung lagi." },
+        { "jawaban": 7, "pesan": "7 adalah gambar ke-4. Tambah 2 lagi." }
+      ],
+      "umpanBalikUmum": "Pola ganjil bertambah 2 setiap gambar, atau pakai rumus 2n − 1."
+    },
+    {
+      "id": "m3-l2", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Tentukan bilangan genap ke-25.",
+      "pola": [2, 4, 6, 8], "jawaban": 50,
+      "petunjuk": ["Rumus bilangan genap adalah 2n.", "Ganti n dengan 25.", "2 × 25 = …"],
+      "umpanBalik": [
+        { "jawaban": 48, "pesan": "48 adalah bilangan genap ke-24. Hitung lagi untuk n = 25." },
+        { "jawaban": 27, "pesan": "Kamu menambah 2 ke 25. Rumusnya 2 × n, bukan n + 2." }
+      ],
+      "umpanBalikUmum": "Gunakan rumus Uₙ = 2n."
+    },
+    {
+      "id": "m3-l3", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Tentukan bilangan ganjil ke-50.",
+      "pola": [1, 3, 5, 7], "jawaban": 99,
+      "petunjuk": ["Rumus bilangan ganjil adalah 2n − 1.", "Ganti n dengan 50: 2 × 50 − 1.", "100 − 1 = …"],
+      "umpanBalik": [
+        { "jawaban": 100, "pesan": "100 adalah bilangan genap ke-50. Ganjil ke-n = 2n − 1." },
+        { "jawaban": 101, "pesan": "Hampir! 2 × 50 = 100, lalu dikurangi 1, bukan ditambah." }
+      ],
+      "umpanBalikUmum": "Gunakan rumus Uₙ = 2n − 1."
+    },
+    {
+      "id": "m3-l4", "tipe": "isian-rumus", "tingkat": 3,
+      "pertanyaan": "Barisan 3, 5, 7, 9, … adalah bilangan ganjil yang dimulai dari 3. Tentukan rumus suku ke-n.",
+      "pola": [3, 5, 7, 9], "jawaban": "2n+1",
+      "petunjuk": ["Selisihnya +2, jadi rumusnya diawali 2n.", "Untuk n = 1, 2n = 2, padahal suku ke-1 adalah 3.", "3 − 2 = 1. Jadi 2n ditambah 1."],
+      "umpanBalik": [
+        { "jawaban": "2n-1", "pesan": "2n − 1 memberi 1, 3, 5, … Barisan ini dimulai dari 3. Cek n = 1." },
+        { "jawaban": "2n", "pesan": "2n memberi bilangan genap 2, 4, 6, … Setiap suku barisan ini 1 lebih besar." }
+      ],
+      "umpanBalikUmum": "Angka di depan n sama dengan selisihnya. Lalu sesuaikan agar cocok dengan suku ke-1."
+    },
+    {
+      "id": "m3-l5", "tipe": "pg-kompleks", "tingkat": 2,
+      "pertanyaan": "Tentukan Benar atau Salah untuk setiap pernyataan.",
+      "pernyataan": [
+        { "teks": "Bilangan ganjil ke-10 adalah 19.", "benar": true, "penjelasan": "2 × 10 − 1 = 19." },
+        { "teks": "Bilangan genap ke-10 adalah 20.", "benar": true, "penjelasan": "2 × 10 = 20." },
+        { "teks": "Jumlah dua bilangan ganjil selalu ganjil.", "benar": false, "penjelasan": "Contoh: 1 + 3 = 4, hasilnya genap." },
+        { "teks": "Bilangan genap ke-n dikurangi 1 sama dengan bilangan ganjil ke-n.", "benar": true, "penjelasan": "2n − 1 adalah rumus bilangan ganjil ke-n." }
+      ],
+      "petunjuk": ["Pakai rumus 2n dan 2n − 1 untuk dua pernyataan pertama.", "Untuk pernyataan ketiga, coba beberapa contoh: 1 + 3, 5 + 7.", "Untuk pernyataan keempat, bandingkan 2n − 1 dengan rumus ganjil."],
+      "umpanBalikUmum": "Uji setiap pernyataan dengan rumus atau dengan contoh bilangan."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "rapat-osis",
+      "judul": "Meja Rapat OSIS",
+      "konteks": "sosial-budaya",
+      "tahapSiklus": "A",
+      "teks": "Untuk rapat OSIS, setiap meja dipakai oleh 2 siswa yang duduk berdampingan.\nSatu meja untuk 2 siswa, dua meja untuk 4 siswa, dan tiga meja untuk 6 siswa.\nHari ini ada 23 siswa yang datang rapat.",
+      "visual": { "jenis": "tabel", "kolom": ["Banyak meja", "1", "2", "3"], "baris": [["Banyak siswa", 2, 4, 6]] },
+      "glosarium": [{ "istilah": "OSIS", "arti": "Organisasi Siswa Intra Sekolah" }],
+      "infoPenting": ["2 siswa", "23 siswa"],
+      "ditanya": "banyak siswa yang bisa duduk dan banyak meja yang perlu disiapkan",
+      "ubah": {
+        "pertanyaan": "Lengkapi banyak siswa untuk 4 dan 5 meja.",
+        "tabel": { "kolom": ["Banyak meja", "1", "2", "3", "4", "5"], "baris": [["Banyak siswa", 2, 4, 6, null, null]] },
+        "kunciTabel": [8, 10],
+        "petunjuk": ["Setiap meja untuk berapa siswa?", "Setiap tambahan meja menambah 2 siswa.", "4 meja = 6 + 2 = 8 siswa."],
+        "umpanBalikUmum": "Banyak siswa = 2 × banyak meja."
+      },
+      "soal": [
+        {
+          "id": "osis-1", "tipe": "isian-angka", "level": "L1", "proses": ["LM3"],
+          "pertanyaan": "Berapa siswa yang bisa duduk di 9 meja?", "satuan": "siswa", "jawaban": 18,
+          "petunjuk": ["Setiap meja untuk 2 siswa.", "Banyak siswa = 2 × banyak meja.", "2 × 9 = …"],
+          "umpanBalik": [{ "jawaban": 11, "pesan": "Kamu menambah 2. Setiap meja untuk 2 siswa, jadi 9 meja = 2 × 9." }],
+          "umpanBalikUmum": "Kalikan banyak meja dengan 2."
+        },
+        {
+          "id": "osis-2", "tipe": "isian-rumus", "level": "L2", "proses": ["LM2"],
+          "pertanyaan": "Tulis rumus banyak siswa yang bisa duduk di n meja.", "pola": [2, 4, 6], "jawaban": "2n",
+          "petunjuk": ["Lihat tabel: 1 meja → 2, 2 meja → 4, 3 meja → 6.", "Banyak siswa selalu 2 kali banyak meja.", "Rumusnya 2 × n."],
+          "umpanBalik": [{ "jawaban": "n+2", "pesan": "Cek n = 3: 3 + 2 = 5, padahal 3 meja untuk 6 siswa." }],
+          "umpanBalikUmum": "Cari hubungan antara banyak meja dan banyak siswa di tabel."
+        },
+        {
+          "id": "osis-3", "tipe": "isian-angka", "level": "L3", "proses": ["LM3", "LM4", "LM5"],
+          "pertanyaan": "Ada 23 siswa yang datang. Paling sedikit berapa meja yang harus disiapkan agar semua siswa mendapat tempat duduk?", "satuan": "meja", "jawaban": 12,
+          "petunjuk": ["Berapa siswa yang bisa duduk di 11 meja?", "11 meja untuk 22 siswa. Masih ada 1 siswa.", "Siswa terakhir butuh satu meja lagi."],
+          "umpanBalik": [
+            { "jawaban": 11.5, "toleransi": 0.01, "pesan": "23 : 2 = 11,5. Tetapi tidak ada setengah meja. Kembalikan ke cerita." },
+            { "jawaban": 11, "pesan": "11 meja hanya untuk 22 siswa. Satu siswa belum mendapat tempat duduk." }
+          ],
+          "umpanBalikUmum": "Semua siswa harus mendapat tempat duduk, dan banyak meja harus bilangan bulat.",
+          "pertanyaanCekCerita": [
+            { "tanya": "23 adalah bilangan ganjil. Apa artinya untuk meja ke-12?", "pilihan": ["Meja ke-12 hanya dipakai 1 siswa", "Meja ke-12 dipakai 2 siswa", "Meja ke-12 tidak dipakai"], "jawaban": 0, "penjelasan": "Tepat. 11 meja terisi penuh (22 siswa), dan 1 siswa sisanya duduk di meja ke-12.", "penjelasanSalah": "Hitung: 11 meja penuh = 22 siswa. Masih ada berapa siswa?" }
+          ]
+        },
+        {
+          "id": "osis-4", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Dewi berpendapat tentang banyak siswa dan meja.",
+          "tokoh": "Dewi", "klaim": "Jika banyak siswa genap dan meja disiapkan sesedikit mungkin, semua meja pasti terisi penuh.", "klaimBenar": true,
+          "alasan": { "pilihan": ["Setuju, karena bilangan genap selalu bisa dibagi menjadi pasangan, jadi tidak ada tempat duduk yang kosong.", "Tidak setuju, karena 23 siswa membutuhkan 12 meja.", "Setuju, karena banyak meja selalu genap."], "benar": 0 },
+          "petunjuk": ["Coba dengan 20 siswa: berapa meja yang perlu disiapkan?", "20 siswa = 10 pasang, jadi 10 meja penuh.", "Apakah ini berlaku untuk semua bilangan genap?"],
+          "umpanBalikUmum": "Coba beberapa contoh banyak siswa genap, lalu hitung banyak meja yang dibutuhkan.",
+          "pembahasan": "Bilangan genap = 2 × suatu bilangan, jadi siswa selalu bisa dipasangkan tanpa sisa. Contoh: 20 siswa = 10 pasang = 10 meja penuh. Pilihan \"banyak meja selalu genap\" salah, karena 6 siswa membutuhkan 3 meja."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Bagaimana caramu mengingat rumus bilangan genap dan bilangan ganjil?",
+    "kalimatAwal": "Bilangan genap ke-n adalah ",
+    "contohPenjelasan": "Bilangan genap ke-n adalah 2n karena noktahnya tersusun dalam 2 baris. Bilangan ganjil ke-n adalah 2n − 1, yaitu 1 kurang dari bilangan genap pasangannya."
+  },
+  "kuis": [
+    { "id": "m3-k1", "tipe": "isian-angka", "pertanyaan": "Tentukan bilangan genap ke-40.", "jawaban": 80, "pembahasan": "Uₙ = 2n, jadi U₄₀ = 2 × 40 = 80." },
+    { "id": "m3-k2", "tipe": "isian-angka", "pertanyaan": "Tentukan bilangan ganjil ke-16.", "jawaban": 31, "pembahasan": "Uₙ = 2n − 1, jadi U₁₆ = 32 − 1 = 31." },
+    { "id": "m3-k3", "tipe": "pilihan-ganda", "pertanyaan": "Bilangan 47 adalah bilangan ganjil ke berapa?", "pilihan": ["Ke-23", "Ke-24", "Ke-47", "Ke-94"], "jawaban": 1, "pembahasan": "2n − 1 = 47, jadi 2n = 48 dan n = 24. Cek: 2 × 24 − 1 = 47 ✓." },
+    { "id": "m3-k4", "tipe": "isian-rumus", "pertanyaan": "Barisan 6, 8, 10, 12, … adalah bilangan genap yang dimulai dari 6. Tentukan rumus suku ke-n.", "pola": [6, 8, 10, 12], "jawaban": "2n+4", "pembahasan": "Selisih +2, jadi diawali 2n. Untuk n = 1, 2n = 2, padahal suku ke-1 adalah 6. Jadi Uₙ = 2n + 4." }
+  ]
+}

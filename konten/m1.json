@@ -1,0 +1,262 @@
+{
+  "id": "m1",
+  "kode": "M1",
+  "judul": "Mengenal Pola",
+  "tujuan": [
+    "Mengenali pola berulang pada susunan bentuk dan warna (TP1)",
+    "Menentukan satuan pola dan bentuk ke-n pada pola berulang (TP1)",
+    "Menentukan banyak benda berikutnya pada pola yang bertambah (TP1)",
+    "Memakai pola untuk memecahkan masalah sehari-hari (TP6–TP9)"
+  ],
+  "segmen": [
+    {
+      "id": "s1",
+      "judul": "Apa itu pola?",
+      "video": { "judul": "Mengenal pola", "src": "" },
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "lingkaran-pink", "segitiga-biru", "lingkaran-pink", "segitiga-biru"] },
+      "teks": [
+        "**Pola** adalah susunan yang mengikuti aturan tertentu.",
+        "Pada pola ini, lingkaran dan segitiga muncul bergantian."
+      ]
+    },
+    {
+      "id": "s2",
+      "judul": "Satuan pola",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "persegi-ungu", "lingkaran-pink", "segitiga-biru", "persegi-ungu", "lingkaran-pink", "segitiga-biru", "persegi-ungu"] },
+      "teks": [
+        "Bagian yang diulang-ulang disebut **satuan pola**.",
+        "Satuan pola ini adalah lingkaran, segitiga, persegi, yaitu 3 bentuk."
+      ]
+    },
+    {
+      "id": "s3",
+      "judul": "Menebak bentuk yang jauh",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "persegi-ungu", "lingkaran-pink", "segitiga-biru", "persegi-ungu"] },
+      "teks": [
+        "Karena satuannya 3 bentuk, bentuk ke-3, ke-6, dan ke-9 selalu persegi.",
+        "Untuk bentuk ke-20, bagi 20 dengan 3: hasilnya 6 sisa 2.",
+        "Sisa 2 berarti bentuk ke-20 sama dengan bentuk ke-2, yaitu segitiga."
+      ]
+    },
+    {
+      "id": "s4",
+      "judul": "Pola yang bertambah",
+      "visual": { "jenis": "noktah", "bentuk": "garis", "banyak": 4 },
+      "teks": [
+        "Ada juga pola yang terus bertambah.",
+        "Di sini setiap gambar mendapat 1 noktah lagi: 1, 2, 3, 4."
+      ]
+    },
+    {
+      "id": "s5",
+      "judul": "Dua pertanyaan penting",
+      "teks": [
+        "Saat melihat pola, tanyakan: apa yang berulang atau bertambah?",
+        "Lalu tanyakan: berapa banyaknya setiap kali?"
+      ]
+    }
+  ],
+  "contohLengkap": [
+    {
+      "id": "c1",
+      "soal": "Perhatikan pola bintang, lingkaran, lingkaran, … Bentuk apakah yang ke-14?",
+      "visual": { "jenis": "bentuk", "deret": ["bintang-kuning", "lingkaran-pink", "lingkaran-pink", "bintang-kuning", "lingkaran-pink", "lingkaran-pink", "bintang-kuning", "lingkaran-pink", "lingkaran-pink"] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Urutannya bintang, lingkaran, lingkaran, lalu berulang." },
+        { "label": "2. Cari satuan", "teks": "Satuan pola: bintang, lingkaran, lingkaran (3 bentuk)." },
+        { "label": "3. Periksa", "teks": "Bentuk ke-3, ke-6, ke-9, dan ke-12 adalah bentuk terakhir dalam satuan." },
+        { "label": "4. Hitung", "teks": "14 : 3 = 4 sisa 2." },
+        { "label": "5. Cek ulang", "teks": "Sisa 2 berarti bentuk ke-2 dalam satuan, yaitu **lingkaran**." }
+      ]
+    },
+    {
+      "id": "c2",
+      "soal": "Gambar 1 memakai 4 ubin, gambar 2 memakai 7 ubin, dan gambar 3 memakai 10 ubin. Berapa ubin pada gambar 5?",
+      "visual": { "jenis": "tabel", "kolom": ["Gambar ke-", "1", "2", "3"], "baris": [["Banyak ubin", 4, 7, 10]] },
+      "langkah": [
+        { "label": "1. Amati", "teks": "Banyak ubin: 4, 7, 10." },
+        { "label": "2. Cari lompatan", "teks": "7 − 4 = 3 dan 10 − 7 = 3. Setiap gambar bertambah 3 ubin." },
+        { "label": "3. Lanjutkan", "teks": "Gambar 4 = 10 + 3 = 13, gambar 5 = 13 + 3 = **16**." }
+      ]
+    }
+  ],
+  "contohSetengahJadi": [
+    {
+      "id": "f1",
+      "soal": "Perhatikan pola segitiga, persegi, persegi, … Bentuk apakah yang ke-10?",
+      "visual": { "jenis": "bentuk", "deret": ["segitiga-biru", "persegi-ungu", "persegi-ungu", "segitiga-biru", "persegi-ungu", "persegi-ungu"] },
+      "langkah": [
+        { "label": "1–2. Amati & cari satuan", "teks": "Satuan pola: segitiga, persegi, persegi (3 bentuk)." },
+        { "label": "3. Hitung", "teks": "Bagi 10 dengan 3. Berapa sisanya?", "kosong": { "tipe": "isian-angka", "label": "Sisa =", "jawaban": 1, "petunjuk": "3 × 3 = 9. 10 − 9 = ?", "penjelasan": "10 : 3 = 3 sisa 1." } },
+        { "label": "4. Tentukan bentuk", "teks": "Sisa 1 berarti bentuk pertama dalam satuan, yaitu **segitiga**." }
+      ]
+    },
+    {
+      "id": "f2",
+      "soal": "Perhatikan pola lingkaran, segitiga, bintang, persegi, … Bentuk apakah yang ke-23?",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "bintang-kuning", "persegi-ungu", "lingkaran-pink", "segitiga-biru", "bintang-kuning", "persegi-ungu"] },
+      "langkah": [
+        { "label": "1–2. Amati & cari satuan", "teks": "Hitung banyak bentuk dalam satu satuan pola.", "kosong": { "tipe": "isian-angka", "label": "Banyak bentuk dalam satuan =", "jawaban": 4, "petunjuk": "Lingkaran, segitiga, bintang, persegi, lalu berulang.", "penjelasan": "Satuannya 4 bentuk." } },
+        { "label": "3. Hitung", "teks": "Bagi 23 dengan 4. Berapa sisanya?", "kosong": { "tipe": "isian-angka", "label": "Sisa =", "jawaban": 3, "petunjuk": "4 × 5 = 20. 23 − 20 = ?", "penjelasan": "23 : 4 = 5 sisa 3." } },
+        { "label": "4. Tentukan bentuk", "teks": "Sisa 3 berarti bentuk ke-3 dalam satuan, yaitu **bintang**." }
+      ]
+    }
+  ],
+  "latihan": [
+    {
+      "id": "m1-l1", "tipe": "pilihan-ganda", "tingkat": 1,
+      "pertanyaan": "Bentuk apakah yang berikutnya?",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "lingkaran-pink", "segitiga-biru", "lingkaran-pink"], "tanya": 1 },
+      "verifikasiPola": { "satuan": ["lingkaran", "segitiga"], "ke": 6 },
+      "pilihan": ["Lingkaran", "Segitiga", "Persegi", "Bintang"], "jawaban": 1,
+      "petunjuk": ["Lihat bentuk apa saja yang muncul.", "Lingkaran dan segitiga muncul bergantian.", "Bentuk terakhir adalah lingkaran. Setelah lingkaran selalu …"],
+      "umpanBalik": [
+        { "jawaban": 0, "pesan": "Setelah lingkaran selalu segitiga. Lihat lagi urutannya." },
+        { "jawaban": 2, "pesan": "Persegi belum pernah muncul di pola ini." },
+        { "jawaban": 3, "pesan": "Bintang belum pernah muncul di pola ini." }
+      ],
+      "umpanBalikUmum": "Cari bagian yang diulang, lalu lanjutkan."
+    },
+    {
+      "id": "m1-l2", "tipe": "isian-angka", "tingkat": 1,
+      "pertanyaan": "Ada berapa bentuk dalam satu satuan pola ini?",
+      "visual": { "jenis": "bentuk", "deret": ["persegi-ungu", "bintang-kuning", "bintang-kuning", "lingkaran-pink", "persegi-ungu", "bintang-kuning", "bintang-kuning", "lingkaran-pink", "persegi-ungu", "bintang-kuning", "bintang-kuning", "lingkaran-pink"] },
+      "verifikasiPola": { "satuan": ["persegi", "bintang", "bintang", "lingkaran"] },
+      "jawaban": 4,
+      "petunjuk": ["Cari bentuk pertama, lalu lihat kapan bentuk itu muncul lagi.", "Persegi muncul lagi di urutan ke-5.", "Satuannya: persegi, bintang, bintang, lingkaran."],
+      "umpanBalik": [
+        { "jawaban": 3, "pesan": "Hitung lagi: persegi, bintang, bintang, lingkaran. Bintang muncul dua kali." },
+        { "jawaban": 12, "pesan": "12 adalah banyak semua bentuk. Satuan pola adalah bagian yang diulang." }
+      ],
+      "umpanBalikUmum": "Satuan pola dimulai dari bentuk pertama sampai sebelum pola berulang lagi."
+    },
+    {
+      "id": "m1-l3", "tipe": "pilihan-ganda", "tingkat": 2,
+      "pertanyaan": "Pola lingkaran, persegi, persegi, … terus berulang. Bentuk apakah yang ke-30?",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "persegi-ungu", "persegi-ungu", "lingkaran-pink", "persegi-ungu", "persegi-ungu"] },
+      "verifikasiPola": { "satuan": ["lingkaran", "persegi", "persegi"], "ke": 30 },
+      "pilihan": ["Lingkaran", "Persegi", "Segitiga"], "jawaban": 1,
+      "petunjuk": ["Satuannya 3 bentuk: lingkaran, persegi, persegi.", "30 : 3 = 10 sisa 0.", "Sisa 0 berarti bentuk terakhir dalam satuan."],
+      "umpanBalik": [
+        { "jawaban": 0, "pesan": "30 : 3 = 10 sisa 0. Sisa 0 berarti bentuk terakhir dalam satuan, bukan bentuk pertama." },
+        { "jawaban": 2, "pesan": "Segitiga tidak ada di pola ini." }
+      ],
+      "umpanBalikUmum": "Bagi urutan bentuk dengan banyak bentuk dalam satuan, lalu lihat sisanya.",
+      "pembahasan": "30 : 3 = 10 sisa 0. Bentuk ke-30 adalah bentuk terakhir pada satuan ke-10, yaitu persegi."
+    },
+    {
+      "id": "m1-l4", "tipe": "isian-angka", "tingkat": 2,
+      "pertanyaan": "Pola lingkaran, segitiga, persegi, … terus berulang. Ada berapa segitiga di antara 20 bentuk pertama?",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "segitiga-biru", "persegi-ungu", "lingkaran-pink", "segitiga-biru", "persegi-ungu"] },
+      "verifikasiPola": { "satuan": ["lingkaran", "segitiga", "persegi"], "hitung": "segitiga", "dari": 20 },
+      "jawaban": 7,
+      "petunjuk": ["Setiap satuan (3 bentuk) berisi 1 segitiga.", "20 : 3 = 6 sisa 2. Jadi ada 6 satuan penuh.", "2 bentuk sisanya adalah lingkaran dan segitiga."],
+      "umpanBalik": [
+        { "jawaban": 6, "pesan": "6 satuan penuh memberi 6 segitiga. Masih ada 2 bentuk sisa: lingkaran, segitiga." },
+        { "jawaban": 20, "pesan": "20 adalah banyak semua bentuk, bukan banyak segitiga." }
+      ],
+      "umpanBalikUmum": "Hitung satuan penuh, lalu periksa bentuk sisanya.",
+      "pembahasan": "20 = 6 × 3 + 2. Enam satuan penuh berisi 6 segitiga. Dua bentuk sisanya (ke-19 dan ke-20) adalah lingkaran dan segitiga. Jadi ada 7 segitiga."
+    },
+    {
+      "id": "m1-l5", "tipe": "lengkapi-tabel", "tingkat": 3,
+      "pertanyaan": "Rumah dari batang korek api disusun berjajar. Gambar 1 memakai 5 batang, gambar 2 memakai 9 batang, dan gambar 3 memakai 13 batang. Lengkapi tabelnya.",
+      "tabel": { "kolom": ["Gambar ke-", "1", "2", "3", "4", "5"], "baris": [["Banyak batang", 5, 9, 13, null, null]] },
+      "kunciTabel": [17, 21],
+      "petunjuk": ["Hitung selisih banyak batang dari gambar ke gambar.", "9 − 5 = 4 dan 13 − 9 = 4.", "Gambar 4 = 13 + 4."],
+      "umpanBalikUmum": "Setiap gambar bertambah 4 batang korek api."
+    }
+  ],
+  "literasi": [
+    {
+      "id": "selendang-tenun",
+      "judul": "Selendang Tenun Rini",
+      "konteks": "sosial-budaya",
+      "tahapSiklus": "A",
+      "teks": "Rini menenun selendang dengan motif garis warna yang berulang.\nUrutan warnanya merah, merah, kuning, hijau, lalu kembali merah, merah, kuning, hijau, dan seterusnya.\nSelendang itu akan berisi 30 garis warna.",
+      "visual": { "jenis": "bentuk", "deret": ["garis-merah", "garis-merah", "garis-kuning", "garis-hijau", "garis-merah", "garis-merah", "garis-kuning", "garis-hijau"] },
+      "glosarium": [{ "istilah": "menenun", "arti": "membuat kain dengan menyilangkan benang" }],
+      "infoPenting": ["merah, merah, kuning, hijau", "30 garis"],
+      "ditanya": "warna garis tertentu dan banyak garis setiap warna",
+      "ubah": {
+        "pertanyaan": "Garis kuning ada di urutan ke berapa saja? Lengkapi tabelnya.",
+        "tabel": { "kolom": ["Garis kuning ke-", "1", "2", "3", "4"], "baris": [["Urutan garis", 3, 7, null, null]] },
+        "kunciTabel": [11, 15],
+        "petunjuk": ["Garis kuning pertama ada di urutan ke-3.", "Satuan polanya 4 garis, jadi garis kuning muncul setiap 4 garis.", "Garis kuning ketiga = 7 + 4."],
+        "umpanBalikUmum": "Garis kuning muncul setiap 4 garis: 3, 7, 11, …"
+      },
+      "soal": [
+        {
+          "id": "tenun-1", "tipe": "pilihan-ganda", "level": "L1", "proses": ["LM1", "LM3"],
+          "pertanyaan": "Warna apakah garis ke-9?",
+          "verifikasiPola": { "satuan": ["merah", "merah", "kuning", "hijau"], "ke": 9 },
+          "pilihan": ["Merah", "Kuning", "Hijau"], "jawaban": 0,
+          "petunjuk": ["Satuan polanya: merah, merah, kuning, hijau (4 garis).", "9 : 4 = 2 sisa 1.", "Sisa 1 berarti garis pertama dalam satuan."],
+          "umpanBalik": [
+            { "jawaban": 1, "pesan": "Garis kuning ada di urutan 3, 7, 11, … Urutan 9 tidak termasuk." },
+            { "jawaban": 2, "pesan": "Garis hijau ada di urutan 4, 8, 12, … Coba hitung lagi." }
+          ],
+          "umpanBalikUmum": "Bagi 9 dengan banyak garis dalam satuan, lalu lihat sisanya."
+        },
+        {
+          "id": "tenun-2", "tipe": "isian-angka", "level": "L2", "proses": ["LM2", "LM3"],
+          "pertanyaan": "Ada berapa garis hijau pada selendang 30 garis itu?", "satuan": "garis",
+          "verifikasiPola": { "satuan": ["merah", "merah", "kuning", "hijau"], "hitung": "hijau", "dari": 30 },
+          "jawaban": 7,
+          "petunjuk": ["Setiap satuan (4 garis) berisi 1 garis hijau.", "30 : 4 = 7 sisa 2.", "Dua garis sisanya berwarna apa?"],
+          "umpanBalik": [
+            { "jawaban": 8, "pesan": "Satuan ke-8 belum lengkap: garis ke-29 dan ke-30 berwarna merah dan merah, belum sampai hijau." },
+            { "jawaban": 30, "pesan": "30 adalah banyak semua garis, bukan banyak garis hijau." }
+          ],
+          "umpanBalikUmum": "Hitung satuan penuh, lalu periksa garis sisanya.",
+          "pertanyaanCekCerita": [
+            { "tanya": "30 : 4 = 7 sisa 2. Apa arti sisa 2 dalam cerita ini?", "pilihan": ["Ada 2 garis terakhir, yaitu merah dan merah", "Ada 2 garis hijau lagi", "Selendangnya kurang 2 garis"], "jawaban": 0, "penjelasan": "Tepat. Garis ke-29 dan ke-30 adalah dua garis pertama satuan berikutnya: merah dan merah.", "penjelasanSalah": "Sisa 2 adalah dua garis setelah 7 satuan penuh. Warna apa dua garis pertama dalam satuan?" }
+          ]
+        },
+        {
+          "id": "tenun-3", "tipe": "klaim", "level": "L3", "proses": ["LM6"],
+          "pertanyaan": "Bayu menghitung warna garis pada selendang 30 garis itu.",
+          "tokoh": "Bayu", "klaim": "Pada selendang 30 garis ini, banyak garis merah tepat dua kali banyak garis kuning.", "klaimBenar": false,
+          "alasan": { "pilihan": ["Setuju, karena dalam satu satuan ada 2 garis merah dan 1 garis kuning.", "Ada 16 garis merah dan 7 garis kuning, karena 2 garis sisa berwarna merah. 16 bukan dua kali 7.", "Garis kuning lebih banyak daripada garis merah."], "benar": 1 },
+          "petunjuk": ["Hitung banyak garis merah dan kuning dalam 7 satuan penuh.", "7 satuan penuh: 14 merah dan 7 kuning.", "Jangan lupa 2 garis sisanya (merah, merah)."],
+          "umpanBalikUmum": "Hitung banyak garis merah dan kuning, termasuk garis sisa.",
+          "pembahasan": "Dalam 7 satuan penuh ada 14 merah dan 7 kuning. Dua garis sisa (ke-29 dan ke-30) berwarna merah, jadi garis merah ada 16. Dua kali 7 adalah 14, bukan 16. Aturan \"2 merah untuk 1 kuning\" hanya tepat jika semua satuan lengkap."
+        }
+      ]
+    }
+  ],
+  "refleksi": {
+    "pertanyaan": "Bagaimana caramu menentukan bentuk ke-100 pada pola yang berulang?",
+    "kalimatAwal": "Pertama, aku mencari ",
+    "contohPenjelasan": "Pertama, aku mencari satuan pola dan menghitung banyak bentuknya. Lalu aku membagi 100 dengan banyak bentuk itu. Sisanya menunjukkan bentuk ke berapa dalam satuan. Jika sisanya 0, bentuknya adalah bentuk terakhir dalam satuan."
+  },
+  "kuis": [
+    {
+      "id": "m1-k1", "tipe": "pilihan-ganda", "pertanyaan": "Pola segitiga, segitiga, lingkaran, … terus berulang. Bentuk apakah yang ke-15?",
+      "visual": { "jenis": "bentuk", "deret": ["segitiga-biru", "segitiga-biru", "lingkaran-pink", "segitiga-biru", "segitiga-biru", "lingkaran-pink"] },
+      "verifikasiPola": { "satuan": ["segitiga", "segitiga", "lingkaran"], "ke": 15 },
+      "pilihan": ["Segitiga", "Lingkaran"], "jawaban": 1,
+      "pembahasan": "15 : 3 = 5 sisa 0. Sisa 0 berarti bentuk terakhir dalam satuan, yaitu lingkaran."
+    },
+    {
+      "id": "m1-k2", "tipe": "isian-angka", "pertanyaan": "Pola lingkaran, persegi, bintang, … terus berulang. Ada berapa bintang di antara 25 bentuk pertama?",
+      "visual": { "jenis": "bentuk", "deret": ["lingkaran-pink", "persegi-ungu", "bintang-kuning", "lingkaran-pink", "persegi-ungu", "bintang-kuning"] },
+      "verifikasiPola": { "satuan": ["lingkaran", "persegi", "bintang"], "hitung": "bintang", "dari": 25 },
+      "jawaban": 8,
+      "pembahasan": "25 = 8 × 3 + 1. Delapan satuan penuh berisi 8 bintang. Bentuk ke-25 adalah lingkaran, jadi tetap 8 bintang."
+    },
+    { "id": "m1-k3", "tipe": "isian-angka", "pertanyaan": "Gambar 1 berisi 6 noktah, gambar 2 berisi 10 noktah, dan gambar 3 berisi 14 noktah. Berapa noktah pada gambar 6?", "pola": [6, 10, 14], "tanya": 3, "jawaban": 26, "pembahasan": "Setiap gambar bertambah 4: 6, 10, 14, 18, 22, 26." },
+    {
+      "id": "m1-k4", "tipe": "pg-kompleks", "pertanyaan": "Pola persegi, lingkaran, lingkaran, … terus berulang. Tentukan Benar atau Salah.",
+      "visual": { "jenis": "bentuk", "deret": ["persegi-ungu", "lingkaran-pink", "lingkaran-pink", "persegi-ungu", "lingkaran-pink", "lingkaran-pink"] },
+      "verifikasiPola": { "satuan": ["persegi", "lingkaran", "lingkaran"] },
+      "pernyataan": [
+        { "teks": "Satuan polanya terdiri atas 3 bentuk.", "benar": true, "penjelasan": "Persegi, lingkaran, lingkaran: 3 bentuk." },
+        { "teks": "Bentuk ke-12 adalah persegi.", "benar": false, "penjelasan": "12 : 3 = 4 sisa 0, jadi bentuk ke-12 adalah bentuk terakhir dalam satuan, yaitu lingkaran." },
+        { "teks": "Bentuk ke-13 adalah persegi.", "benar": true, "penjelasan": "13 : 3 = 4 sisa 1, jadi bentuk ke-13 adalah bentuk pertama, yaitu persegi." },
+        { "teks": "Di antara 9 bentuk pertama ada 6 lingkaran.", "benar": true, "penjelasan": "9 bentuk = 3 satuan, masing-masing berisi 2 lingkaran." }
+      ],
+      "umpanBalikUmum": "Gunakan satuan pola dan sisa pembagian."
+    }
+  ]
+}

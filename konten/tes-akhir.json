@@ -1,0 +1,14 @@
+{
+  "judul": "Tes Akhir",
+  "pengantar": "Tes ini melihat perkembanganmu setelah belajar. Ada soal pola dan soal cerita. Kerjakan dengan tenang, tidak ada batas waktu.",
+  "soal": [
+    { "id": "tk1", "tipe": "isian-angka", "indikator": "selisih-tetap", "pertanyaan": "Tentukan bilangan berikutnya: 3, 6, 9, 12, …", "pola": [3, 6, 9, 12], "jawaban": 15 },
+    { "id": "tk2", "tipe": "isian-angka", "indikator": "suku-ke-n", "pertanyaan": "Tentukan suku ke-10 dari pola 5, 8, 11, 14, …", "pola": [5, 8, 11, 14], "jawaban": 32 },
+    { "id": "tk3", "tipe": "isian-rumus", "indikator": "rumus", "pertanyaan": "Tentukan rumus suku ke-n dari pola 2, 7, 12, 17, …", "pola": [2, 7, 12, 17], "jawaban": "5n-3" },
+    { "id": "tk4", "tipe": "isian-angka", "indikator": "pola-persegi", "pertanyaan": "Pola persegi 1, 4, 9, 16, … Tentukan suku ke-11.", "pola": [1, 4, 9, 16], "jawaban": 121 },
+    { "id": "tk5", "tipe": "isian-angka", "indikator": "pola-persegi-panjang", "pertanyaan": "Pola persegi panjang 2, 6, 12, 20, … Tentukan suku ke-6.", "pola": [2, 6, 12, 20], "jawaban": 42 },
+    { "id": "tk6", "tipe": "isian-angka", "indikator": "LM2-LM3", "pertanyaan": "Dina menabung Rp5.000 pada minggu ke-1. Setiap minggu berikutnya, ia menabung Rp2.000 lebih banyak dari minggu sebelumnya. Berapa rupiah yang Dina tabung pada minggu ke-6?", "satuan": "rupiah", "jawaban": 15000 },
+    { "id": "tk7", "tipe": "klaim", "indikator": "LM6", "pertanyaan": "Satu meja persegi dikelilingi 4 kursi. Jika 2 meja disambung, ada 6 kursi. Jika 3 meja disambung, ada 8 kursi.", "tokoh": "Bima", "klaim": "Jika 10 meja disambung, ada 40 kursi.", "klaimBenar": false, "alasan": { "pilihan": ["Benar, karena 10 × 4 = 40.", "Salah. Polanya 4, 6, 8, … (rumus 2n + 2), jadi 10 meja ada 22 kursi.", "Salah, karena 10 meja ada 20 kursi."], "benar": 1 } },
+    { "id": "tk8", "tipe": "isian-angka", "indikator": "LM4-LM5", "pertanyaan": "Baris pertama sebuah aula berisi 10 kursi. Setiap baris berikutnya bertambah 2 kursi. Satu baris paling banyak boleh berisi 35 kursi. Paling banyak berapa baris yang bisa disusun?", "satuan": "baris", "jawaban": 13 }
+  ]
+}
